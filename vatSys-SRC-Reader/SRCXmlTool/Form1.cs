@@ -64,7 +64,6 @@ namespace SRCXmlTool
                     {
                         if (i.Value == textBox1.Text)
                         {
-                            richTextBox1.Text += "Found " + textBox1.Text;
                             mainNode.RemoveChild(x);
                             breaking = true;
                             break;
@@ -81,7 +80,7 @@ namespace SRCXmlTool
             foreach(string x in routeStings)
             {                
                 XmlElement newElem = doc.CreateElement("Route");
-                newElem.SetAttribute("ID", x.Substring(0, 5));
+                newElem.SetAttribute("ID", x.Substring(3, 5));
                 if (x.Contains('('))
                 {
                     string remark = x.Split('(')[1];
@@ -89,13 +88,13 @@ namespace SRCXmlTool
                     newElem.SetAttribute("Remarks", remark);
 
                     string routing = x.Split('(')[0];
-                    routing = routing.Substring(6, routing.Length - 7);
+                    routing = routing.Substring(9, routing.Length - 10);
                     newElem.InnerText = routing;
                 }
                 else
                 {
                     newElem.SetAttribute("Remarks", "");
-                    newElem.InnerText = x.Substring(6, x.Length - 6);
+                    newElem.InnerText = x.Substring(9, x.Length - 9);
                 }
                 newNode.AppendChild(newElem);
             }

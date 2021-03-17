@@ -29,6 +29,7 @@ namespace SRCXmlTool
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -95,12 +96,11 @@ namespace SRCXmlTool
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(429, 75);
+            this.label3.Location = new System.Drawing.Point(389, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(257, 39);
+            this.label3.Size = new System.Drawing.Size(411, 78);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Example:\r\nAACH1 H384 NP H252 NS Y288 (FL240 and above)\r\nAACH6  H384 NP Q137 VELGA" +
-    " Y894\r\n";
+            this.label3.Text = resources.GetString("label3.Text");
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // button2
