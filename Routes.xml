@@ -29,32 +29,6 @@
     <Route ID="AAWR3" Remarks="">AA RWY 23L — H460 KOPPA H441 SF | AA RWY 05R — H379 SF</Route>
     <Route ID="AAWB3" Remarks="">H384 NP Y738 PADMU Y198 AKAVI Q566 IPMIR Q472</Route>
   </Airport>
-  <Airport Name="NZCH">
-    <Route ID="CHAA1" Remarks="">Y175 OMKUN Y655 POKOM Q277</Route>
-    <Route ID="CHAA6" Remarks="">H110 PORAM Y781 RIVTA Y523 GULOV Y175 OMKUN Y311 DADUK Y273 PEPPE H182</Route>
-    <Route ID="CHCI1" Remarks="">Q854</Route>
-    <Route ID="CHDN1" Remarks="">Y714 IDARA Y814 MIPAK</Route>
-    <Route ID="CHHN3" Remarks="">Y175 OPABI Q126</Route>
-    <Route ID="CHHN5" Remarks="">H110 PORAM Y781 RIVTA Y523 GULOV Y175 OPABI Q126</Route>
-    <Route ID="CHHK3" Remarks="">Q309</Route>
-    <Route ID="CHNV3" Remarks="">Y714 IDARA Y676</Route>
-    <Route ID="CHMC1" Remarks="">Y266 SUNAR Q360 MAMUS</Route>
-    <Route ID="CHNR1" Remarks="">Y393 OMDOX Y465 KAMET H467 BINIT Y737 PM H201 RIDLA H103</Route>
-    <Route ID="CHNR6" Remarks="">Y819 AGSOP Y737 PM H201 RIDLA H103</Route>
-    <Route ID="CHNS1" Remarks="">H110 PORAM Y781 BISEB H110</Route>
-    <Route ID="CHNP1" Remarks="">H110 PORAM Y781 RIVTA Y523 GULOV Y175 OMKUN H499</Route>
-    <Route ID="CHOH3" Remarks="">Y393 OMDOX Y465 KAMET H467 BINIT</Route>
-    <Route ID="CHOH5" Remarks="">Y819 AGSOP Y737 BINIT</Route>
-    <Route ID="CHPM3" Remarks="">Y393 OMDOX Y465 KAMET H467 BINIT Y737</Route>
-    <Route ID="CHPM5" Remarks="">Y819 AGSOP Y737</Route>
-    <Route ID="CHPP2" Remarks="">Y819 AGSOP Y295</Route>
-    <Route ID="CHQN3" Remarks="">Y266</Route>
-    <Route ID="CHRO2" Remarks="FL250 and above">Y393 OMDOX Y465 KAMET H467 FOXTN H313 OH H182 ARETI Y539</Route>
-    <Route ID="CHRO6" Remarks="">Y819 AGSOP Y737 GOPRO H482 KAPTI Y273 DAGOM Y715 ARETI Y539</Route>
-    <Route ID="CHTG1" Remarks="FL250 and above">Y393 OMDOX Y465 KAMET H467 FOXTN H313 OH H182 ARETI Y539 PARRA Y505</Route>
-    <Route ID="CHTG6" Remarks="">Y819 AGSOP Y737 GOPRO H482 KAPTI Y273 DAGOM Y715 ARETI Y539 PARRA Y505</Route>
-    <Route ID="CHTU3" Remarks="">Q196</Route>
-  </Airport>
   <Airport Name="NZDN">
     <Route ID="DNAA1" Remarks="For flights at FL260 or above, maintain FL250 to LADIS">BIDEL Y477 CH Y175 OMKUN Y655 POKOM Q277</Route>
     <Route ID="DNAA4" Remarks="For flights at FL260 or above,maintain FL250 to LADIS">BIDEL Y477 CH H110 PORAM Y781 RIVTA Y523 GULOV Y175 OMKUN Y311 DADUK Y273 PEPPE H182</Route>
@@ -170,28 +144,6 @@
     <Route ID="TUCH1" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to ELDAK">Q196</Route>
     <Route ID="TUWN2" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to ELDAK">Q196 CH Y393</Route>
   </Airport>
-  <Airport Name="NZWN">
-    <Route ID="WNAA2" Remarks="">Y127 OPABI Q277</Route>
-    <Route ID="WNAA4" Remarks="">Y127 OPABI Q126 LIKTU Y273 PEPPE H182</Route>
-    <Route ID="WNAA7" Remarks="">KAMET H467 FOXTN H313 OH H182 ARETI Y539 PARRA Y505 TG H117 NOBAR</Route>
-    <Route ID="WNCI2" Remarks="">Q611</Route>
-    <Route ID="WNCH3" Remarks="">V306 SABDA Y622 MESIX H159</Route>
-    <Route ID="WNCH6" Remarks="">H159</Route>
-    <Route ID="WNDN1" Remarks="">V306 SABDA Y622 MESIX Y676 IDARA Y814 MIPAK</Route>
-    <Route ID="WNDN9" Remarks="">H159 CH Y714 IDARA Y814 MIPAK Q852 SW</Route>
-    <Route ID="WNGS3" Remarks="">KAMET H467 BINIT Y737 PM H467</Route>
-    <Route ID="WNHN2" Remarks="">KAPTI Y273 LIKTU Q126</Route>
-    <Route ID="WNHN7" Remarks="">KAPTI Y273 DAGOM Y715 ARETI Y539 RO H234 FALLS H114 GODOK</Route>
-    <Route ID="WNHS2" Remarks="">KAMET H467 BINIT Y737 PM H201 OPAPA</Route>
-    <Route ID="WNNV2" Remarks="">V306 SABDA Y622 MESIX Y676</Route>
-    <Route ID="WNNV6" Remarks="">H159 MESIX Y676</Route>
-    <Route ID="WNNR1" Remarks="">KAMET H467 BINIT Y737 PM H201 RIDLA H103</Route>
-    <Route ID="WNNS1" Remarks="">RWY 34 — NULKO Q235 | RWY 16 — LUBSI H133</Route>
-    <Route ID="WNNP3" Remarks="">H499</Route>
-    <Route ID="WNOH2" Remarks="">KAMET H467 BINIT</Route>
-    <Route ID="WNPM1" Remarks="">KAMET H467 BINIT Y737</Route>
-    <Route ID="WNPN3" Remarks="">RWY 34 — AVPOD | RWY 16 — Q100</Route>
-  </Airport>
   <Airport Name="NZWS">
     <Route ID="WSWN2" Remarks="">H267</Route>
   </Airport>
@@ -260,5 +212,71 @@
   </Airport>
   <Airport Name="NZKT">
     <Route ID="KTAA1" Remarks="">AA RWY 23L — G591 PERAS then Auckland APABO2A Arrival | AA RWY 05R — G591 PERAS then Auckland UKAPA2B Arrival</Route>
+  </Airport>
+  <Airport Name="NZCH">
+    <Route ID="CHAA1" Remarks="">Y175 OMKUN Y655 POKOM Q277</Route>
+    <Route ID="CHAA6" Remarks="">H110 PORAM Y781 RIVTA Y523 GULOV Y175 OMKUN Y311 DADUK Y273 PEPPE H182</Route>
+    <Route ID="CHCI1" Remarks="">Q854</Route>
+    <Route ID="CHDN1" Remarks="">Y714 IDARA Y814 MIPAK</Route>
+    <Route ID="CHHN3" Remarks="">Y175 OPABI Q126</Route>
+    <Route ID="CHHN5" Remarks="">H110 PORAM Y781 RIVTA Y523 GULOV Y175 OPABI Q126</Route>
+    <Route ID="CHHK3" Remarks="">Q309</Route>
+    <Route ID="CHNV3" Remarks="">Y714 IDARA Y676</Route>
+    <Route ID="CHMC1" Remarks="">Y266 SUNAR Q360 MAMUS</Route>
+    <Route ID="CHNR1" Remarks="">Y393 OMDOX Y465 KAMET H467 BINIT Y737 PM H201 RIDLA H103</Route>
+    <Route ID="CHNR6" Remarks="">Y819 AGSOP Y737 PM H201 RIDLA H103</Route>
+    <Route ID="CHNS1" Remarks="">H110 PORAM Y781 BISEB H110</Route>
+    <Route ID="CHNP1" Remarks="">H110 PORAM Y781 RIVTA Y523 GULOV Y175 OMKUN H499</Route>
+    <Route ID="CHOH3" Remarks="">Y393 OMDOX Y465 KAMET H467 BINIT</Route>
+    <Route ID="CHOH5" Remarks="">Y819 AGSOP Y737 BINIT</Route>
+    <Route ID="CHPM3" Remarks="">Y393 OMDOX Y465 KAMET H467 BINIT Y737</Route>
+    <Route ID="CHPM5" Remarks="">Y819 AGSOP Y737</Route>
+    <Route ID="CHPP2" Remarks="">Y819 AGSOP Y295</Route>
+    <Route ID="CHQN3" Remarks="">Y266</Route>
+    <Route ID="CHRO2" Remarks="FL250 and above">Y393 OMDOX Y465 KAMET H467 FOXTN H313 OH H182 ARETI Y539</Route>
+    <Route ID="CHRO6" Remarks="">Y819 AGSOP Y737 GOPRO H482 KAPTI Y273 DAGOM Y715 ARETI Y539</Route>
+    <Route ID="CHTG1" Remarks="FL250 and above">Y393 OMDOX Y465 KAMET H467 FOXTN H313 OH H182 ARETI Y539 PARRA Y505</Route>
+    <Route ID="CHTG6" Remarks="">Y819 AGSOP Y737 GOPRO H482 KAPTI Y273 DAGOM Y715 ARETI Y539 PARRA Y505</Route>
+    <Route ID="CHTU3" Remarks="">Q196</Route>
+    <Route ID="CHWN1" Remarks="">Y393</Route>
+    <Route ID="CHWN9" Remarks="10,000 ft or below">H424 GOOSE V306 ONOLA Q421 OMDOX Y393</Route>
+    <Route ID="CHWP1" Remarks="">Y175 OMKUN Y655 POKOM Q277 AA H182</Route>
+    <Route ID="CHWP6" Remarks="">H110 PORAM Y781 RIVTA Y523 GULOV Y175 OMKUN Y311 DADUK Y273 PEPPE H182</Route>
+    <Route ID="CHWB1" Remarks="">Y819 ELPIT H157</Route>
+  </Airport>
+  <Airport Name="NZWN">
+    <Route ID="WNAA2" Remarks="">Y127 OPABI Q277</Route>
+    <Route ID="WNAA4" Remarks="">Y127 OPABI Q126 LIKTU Y273 PEPPE H182</Route>
+    <Route ID="WNAA7" Remarks="">KAMET H467 FOXTN H313 OH H182 ARETI Y539 PARRA Y505 TG H117 NOBAR</Route>
+    <Route ID="WNCI2" Remarks="">Q611</Route>
+    <Route ID="WNCH3" Remarks="">V306 SABDA Y622 MESIX H159</Route>
+    <Route ID="WNCH6" Remarks="">H159</Route>
+    <Route ID="WNDN1" Remarks="">V306 SABDA Y622 MESIX Y676 IDARA Y814 MIPAK</Route>
+    <Route ID="WNDN9" Remarks="">H159 CH Y714 IDARA Y814 MIPAK Q852 SW</Route>
+    <Route ID="WNGS3" Remarks="">KAMET H467 BINIT Y737 PM H467</Route>
+    <Route ID="WNHN2" Remarks="">KAPTI Y273 LIKTU Q126</Route>
+    <Route ID="WNHN7" Remarks="">KAPTI Y273 DAGOM Y715 ARETI Y539 RO H234 FALLS H114 GODOK</Route>
+    <Route ID="WNHS2" Remarks="">KAMET H467 BINIT Y737 PM H201 OPAPA</Route>
+    <Route ID="WNNV2" Remarks="">V306 SABDA Y622 MESIX Y676</Route>
+    <Route ID="WNNV6" Remarks="">H159 MESIX Y676</Route>
+    <Route ID="WNNR1" Remarks="">KAMET H467 BINIT Y737 PM H201 RIDLA H103</Route>
+    <Route ID="WNNS1" Remarks="">RWY 34 — NULKO Q235 | RWY 16 — LUBSI H133</Route>
+    <Route ID="WNNP3" Remarks="">H499</Route>
+    <Route ID="WNOH2" Remarks="">KAMET H467 BINIT</Route>
+    <Route ID="WNPM1" Remarks="">KAMET H467 BINIT Y737</Route>
+    <Route ID="WNPN3" Remarks="">RWY 34 — AVPOD | RWY 16 — Q100</Route>
+    <Route ID="WNQN3" Remarks="">V306 SABDA Y622 MESIX H159 CH Y266</Route>
+    <Route ID="WNRO1" Remarks="">KAPTI Y273 DAGOM Y715 ARETI Y539</Route>
+    <Route ID="WNAP3" Remarks="">KAPTI Y273 DAGOM Y715 ARETI H116</Route>
+    <Route ID="WNTG1" Remarks="">KAPTI Y273 DAGOM Y715 ARETI Y539 PARRA Y505</Route>
+    <Route ID="WNTU1" Remarks="">V306 SABDA Y622 MESIX H159 CH Q196</Route>
+    <Route ID="WNWU3" Remarks="">KAPTI H482</Route>
+    <Route ID="WNWS1" Remarks="">RWY 34 — NULKO Q235 BOLOX H463 NS H267 | RWY 16 — LUBSI H133 NS H267</Route>
+    <Route ID="WNWK3" Remarks="">KAPTI Y273 DAGOM Y715 ARETI Y539 RO H480</Route>
+    <Route ID="WNWR1" Remarks="">Y127 OPABI Q126 LIKTU Y273 PEPPE H182 AA H379 SF</Route>
+    <Route ID="WNWP2" Remarks="">Y127 OPABI Q277 AA H182</Route>
+    <Route ID="WNWP6" Remarks="">Y127 OPABI Q126 LIKTU Y273 PEPPE H182</Route>
+    <Route ID="WNWP9" Remarks="">KAMET H467 FOXTN H313 OH H182 ARETI Y539 PARRA Y505 TG H117 NOBAR Q132 MERAS Q119 AA H182</Route>
+    <Route ID="WNWB3" Remarks="">RWY 34 — AVPOD | RWY 16 — Q100</Route>
   </Airport>
 </StandardRoutes>
