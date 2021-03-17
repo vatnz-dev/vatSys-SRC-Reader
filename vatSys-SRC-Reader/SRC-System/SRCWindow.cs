@@ -15,7 +15,7 @@ namespace SRC_System
         }
         void LoadRoutes()
         {
-            XmlDocument xmlDoc = new XmlDocument();     
+            XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.Load(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "/Documents/vatSys Files/Profiles/New Zealand/Plugins/SRC-System/Routes.xml"); 
             foreach(XmlNode x in xmlDoc.ChildNodes[0].ChildNodes)
             {
@@ -55,7 +55,7 @@ namespace SRC_System
             StandardRoute foundRoute = new StandardRoute();
             foreach (var x in routes)
             {
-                if (x.Routing.Contains(selectedRouting))
+                if (x.Routing == selectedRouting)
                 {
                     routeExists = true;
                     foundRoute = x;
@@ -64,7 +64,7 @@ namespace SRC_System
             }
             if (routeExists)
             {
-                routeDesignator.Text = "Route: " + foundRoute.Designator;
+                routeDesignator.Text = "Designator: " + foundRoute.Designator;
                 if (foundRoute.Remarks == "")
                     routeRemarks.Text = "Remarks: NONE ";
                 else
@@ -75,6 +75,21 @@ namespace SRC_System
                 routeDesignator.Text = "Designator: NONE";
                 routeRemarks.Text = "Remarks: NONE";
             }
+        }
+        private void FromTo_Change(object sender, EventArgs e)
+        {
+            string options = "";
+            if (fromInput.Text.Length > 3 && toInput.Text.Length > 3)
+            {
+                foreach (var x in routes.Where(d => d.Designator.Substring(0, 2) == fromInput.Text.Substring(2, 2)).Where(a => a.Designator.Substring(2, 2) == toInput.Text.Substring(2, 2)))
+                {
+                    options += x.Designator + " | " + x.Routing;
+                    if (x.Remarks != "")
+                        options += " | " + x.Remarks;
+                    options += "\n";
+                }
+            }
+            SRCOptions.Text = options;
         }
     }
     public struct StandardRoute
