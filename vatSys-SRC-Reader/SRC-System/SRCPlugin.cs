@@ -12,13 +12,13 @@ using System.Windows.Forms;
 namespace SRC_System
 {
     [Export(typeof(IPlugin))]
-    public class SRCPLugin : IPlugin
+    public class SRCPlugin : IPlugin
     {
         public string Name => throw new NotImplementedException();
 
         private static SRCWindow srcWindow;
         private CustomToolStripMenuItem SRCWindowMenu;
-        public SRCPLugin()
+        public SRCPlugin()
         {
             SRCWindowMenu = new CustomToolStripMenuItem(CustomToolStripMenuItemWindowType.Main, CustomToolStripMenuItemCategory.Tools, new ToolStripMenuItem("SRC Plugin"));
             SRCWindowMenu.Item.Click += SetupWindowMenu_Click;
@@ -29,28 +29,26 @@ namespace SRC_System
             DoShowSRCWindow();
         }
         public CustomLabelItem GetCustomLabelItem(string itemType, Track track, FDP2.FDR flightDataRecord, RDP.RadarTrack radarTrack)
-        {           
-            throw new NotImplementedException();
+        {
+            return null;
         }
 
         public void OnFDRUpdate(FDP2.FDR updated)
         {
-            throw new NotImplementedException();
         }
 
         public void OnRadarTrackUpdate(RDP.RadarTrack updated)
         {
-            throw new NotImplementedException();
         }
 
         public CustomColour SelectASDTrackColour(Track track)
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         public CustomColour SelectGroundTrackColour(Track track)
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         public static void ShowSRCWindow()
