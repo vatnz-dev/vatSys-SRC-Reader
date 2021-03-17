@@ -17,7 +17,7 @@ namespace SRC_System
         {
             XmlDocument xmlDoc = new XmlDocument();     
             xmlDoc.Load(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "/Documents/vatSys Files/Profiles/New Zealand/Plugins/SRC-System/Routes.xml"); 
-            foreach(XmlNode x in xmlDoc.ChildNodes)
+            foreach(XmlNode x in xmlDoc.ChildNodes[0].ChildNodes)
             {
                 foreach(XmlNode i in x.ChildNodes)
                 {
