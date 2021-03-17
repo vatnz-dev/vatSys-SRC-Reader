@@ -16,7 +16,11 @@ namespace SRC_System
         void LoadRoutes()
         {
             XmlDocument xmlDoc = new XmlDocument();
-            xmlDoc.Load(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "/Documents/vatSys Files/Profiles/New Zealand/Plugins/SRC-System/Routes.xml"); 
+            string location = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            location = location.Substring(0, location.Length - System.Reflection.Assembly.GetExecutingAssembly().GetName().Name.Length-4) + "/SRC-System/Routes.xml";
+            xmlDoc.Load(location); 
+            
+            
             foreach(XmlNode x in xmlDoc.ChildNodes[0].ChildNodes)
             {
                 foreach(XmlNode i in x.ChildNodes)
