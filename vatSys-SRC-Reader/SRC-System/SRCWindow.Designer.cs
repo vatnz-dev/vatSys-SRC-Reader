@@ -122,9 +122,9 @@
             this.routeRemarks.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.routeRemarks.HasBorder = false;
             this.routeRemarks.InteractiveText = false;
-            this.routeRemarks.Location = new System.Drawing.Point(110, 125);
+            this.routeRemarks.Location = new System.Drawing.Point(10, 125);
             this.routeRemarks.Name = "routeRemarks";
-            this.routeRemarks.Size = new System.Drawing.Size(500, 25);
+            this.routeRemarks.Size = new System.Drawing.Size(700, 25);
             this.routeRemarks.TabIndex = 0;
             this.routeRemarks.Text = "Remarks: NONE";
             this.routeRemarks.TextAlign = System.Drawing.ContentAlignment.TopCenter;
