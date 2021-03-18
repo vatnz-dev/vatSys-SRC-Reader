@@ -41,7 +41,7 @@ namespace SRC_System
                 var routeObj = routes.Find(x => x.Designator == selectedDesignator);
                 routing.Text = "Route: " + routeObj.Routing;
                 if (routeObj.Remarks == "")
-                    routeRemarks.Text = "Remarks: NONE ";
+                    routeRemarks.Text = "Remarks: NONE";
                 else
                     routeRemarks.Text = "Remarks: " + routeObj.Remarks;
             }
@@ -71,7 +71,7 @@ namespace SRC_System
             {
                 routeDesignator.Text = "Designator: " + foundRoute.Designator;
                 if (foundRoute.Remarks == "")
-                    routeRemarks.Text = "Remarks: NONE ";
+                    routeRemarks.Text = "Remarks: NONE";
                 else
                     routeRemarks.Text = "Remarks: " + foundRoute.Remarks;
             }
