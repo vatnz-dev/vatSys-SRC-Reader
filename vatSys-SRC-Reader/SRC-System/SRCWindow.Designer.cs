@@ -35,6 +35,7 @@
             // fromInput
             // 
             this.fromInput.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.fromInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.fromInput.Font = new System.Drawing.Font("Terminus (TTF)", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.fromInput.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.fromInput.Location = new System.Drawing.Point(20, 150);
@@ -42,12 +43,13 @@
             this.fromInput.NumericCharOnly = false;
             this.fromInput.Size = new System.Drawing.Size(80, 27);
             this.fromInput.TabIndex = 0;
-            this.fromInput.Text = "From";
+            this.fromInput.Text = "FROM";
             this.fromInput.TextChanged += new System.EventHandler(this.FromTo_Change);
             // 
             // toInput
             // 
             this.toInput.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.toInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.toInput.Font = new System.Drawing.Font("Terminus (TTF)", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.toInput.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.toInput.Location = new System.Drawing.Point(120, 150);
@@ -55,12 +57,13 @@
             this.toInput.NumericCharOnly = false;
             this.toInput.Size = new System.Drawing.Size(80, 27);
             this.toInput.TabIndex = 0;
-            this.toInput.Text = "To";
+            this.toInput.Text = "TO";
             this.toInput.TextChanged += new System.EventHandler(this.FromTo_Change);
             // 
             // routeDesignatorInput
             // 
             this.routeDesignatorInput.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.routeDesignatorInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.routeDesignatorInput.Font = new System.Drawing.Font("Terminus (TTF)", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.routeDesignatorInput.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.routeDesignatorInput.Location = new System.Drawing.Point(20, 20);
@@ -68,13 +71,14 @@
             this.routeDesignatorInput.NumericCharOnly = false;
             this.routeDesignatorInput.Size = new System.Drawing.Size(300, 27);
             this.routeDesignatorInput.TabIndex = 0;
-            this.routeDesignatorInput.Text = "Route Designator Input";
+            this.routeDesignatorInput.Text = "ROUTE DESIGNATOR INPUT";
+            this.routeDesignatorInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.routeDesignatorInput.TextChanged += new System.EventHandler(this.RouteDesignator_Change);
-            routeDesignatorInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // routingInput
             // 
             this.routingInput.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.routingInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.routingInput.Font = new System.Drawing.Font("Terminus (TTF)", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.routingInput.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.routingInput.Location = new System.Drawing.Point(400, 20);
@@ -82,9 +86,9 @@
             this.routingInput.NumericCharOnly = false;
             this.routingInput.Size = new System.Drawing.Size(300, 27);
             this.routingInput.TabIndex = 0;
-            this.routingInput.Text = "Routing Input";
+            this.routingInput.Text = "ROUTING INPUT";
+            this.routingInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.routingInput.TextChanged += new System.EventHandler(this.Routing_Change);
-            routingInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // routeDesignator
             // 
@@ -98,7 +102,6 @@
             this.routeDesignator.TabIndex = 0;
             this.routeDesignator.Text = "Designator: NONE";
             this.routeDesignator.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            routeDesignator.AutoSize = false;
             // 
             // routing
             // 
@@ -112,7 +115,6 @@
             this.routing.TabIndex = 0;
             this.routing.Text = "Route: NONE";
             this.routing.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            routing.AutoSize = false;
             // 
             // routeRemarks
             // 
@@ -126,7 +128,6 @@
             this.routeRemarks.TabIndex = 0;
             this.routeRemarks.Text = "Remarks: NONE";
             this.routeRemarks.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            routeRemarks.AutoSize = false;
             // 
             // SRCOptions
             // 
@@ -138,7 +139,6 @@
             this.SRCOptions.Name = "SRCOptions";
             this.SRCOptions.Size = new System.Drawing.Size(2000, 500);
             this.SRCOptions.TabIndex = 0;
-            SRCOptions.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             // 
             // SRCWindow
             // 
