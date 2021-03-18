@@ -14,7 +14,7 @@ namespace SRC_System
     [Export(typeof(IPlugin))]
     public class SRCPlugin : IPlugin
     {
-        public string Name => throw new NotImplementedException();
+        public string Name { get => "Standard Route Tool"; }
 
         private static SRCWindow srcWindow;
         private CustomToolStripMenuItem SRCWindowMenu;
