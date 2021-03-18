@@ -62,7 +62,7 @@ namespace SRC_System
                 srcWindow = new SRCWindow();
             else if (srcWindow.Visible)
                 return;
-            srcWindow.ShowDialog();
+            srcWindow.Show(Application.OpenForms[0]);
         }
     }
 }
