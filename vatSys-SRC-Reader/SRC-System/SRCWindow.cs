@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using vatsys;
 using System.Linq;
 using System.Xml;
-using AISTools;
+
 namespace SRC_System
 {
     public partial class SRCWindow : BaseForm

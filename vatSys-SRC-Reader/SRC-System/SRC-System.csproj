@@ -49,9 +49,6 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AISTools">
-      <HintPath>..\..\..\..\..\AppData\Local\Apps\2.0\4GO0ZTZG.XPN\EV3DTWR0.K59\aist..tion_7cd37011ad28800f_0001.0000_d387130490c9d0a8\AISTools.exe</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
