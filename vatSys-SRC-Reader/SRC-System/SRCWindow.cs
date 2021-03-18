@@ -11,6 +11,7 @@ namespace SRC_System
         public SRCWindow()
         {   
             InitializeComponent();
+            Form1_Resize(null, null);
             LoadRoutes();
         }
         void LoadRoutes()
@@ -94,6 +95,10 @@ namespace SRC_System
                 }
             }
             SRCOptions.Text = options;
+        }
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            SRCOptions.Width = Convert.ToInt32(Width - 270);
         }
     }
     public struct StandardRoute
