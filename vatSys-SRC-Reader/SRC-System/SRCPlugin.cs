@@ -20,7 +20,7 @@ namespace SRC_System
         private CustomToolStripMenuItem SRCWindowMenu;
         public SRCPlugin()
         {
-            SRCWindowMenu = new CustomToolStripMenuItem(CustomToolStripMenuItemWindowType.Main, CustomToolStripMenuItemCategory.Tools, new ToolStripMenuItem("SRC Plugin"));
+            SRCWindowMenu = new CustomToolStripMenuItem(CustomToolStripMenuItemWindowType.Main, CustomToolStripMenuItemCategory.Tools, new ToolStripMenuItem("SRC Tool"));
             SRCWindowMenu.Item.Click += SetupWindowMenu_Click;
             MMI.AddCustomMenuItem(SRCWindowMenu);
         }
