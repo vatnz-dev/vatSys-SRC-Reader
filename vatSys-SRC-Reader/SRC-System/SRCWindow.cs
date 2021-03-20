@@ -9,7 +9,7 @@ namespace SRC_System
     public partial class SRCWindow : BaseForm
     {
         public SRCWindow()
-        {   
+        {
             InitializeComponent();
             Form1_Resize(null, null);
             LoadRoutes();
@@ -18,13 +18,13 @@ namespace SRC_System
         {
             XmlDocument xmlDoc = new XmlDocument();
             string location = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            location = location.Substring(0, location.Length - System.Reflection.Assembly.GetExecutingAssembly().GetName().Name.Length-4) + "/SRC-System/Routes.xml";
-            xmlDoc.Load(location); 
-            
-            
-            foreach(XmlNode x in xmlDoc.ChildNodes[0].ChildNodes)
+            location = location.Substring(0, location.Length - System.Reflection.Assembly.GetExecutingAssembly().GetName().Name.Length - 4) + "/SRC-System/Routes.xml";
+            xmlDoc.Load(location);
+
+
+            foreach (XmlNode x in xmlDoc.ChildNodes[0].ChildNodes)
             {
-                foreach(XmlNode i in x.ChildNodes)
+                foreach (XmlNode i in x.ChildNodes)
                 {
                     routes.Add(new StandardRoute(i.Attributes.GetNamedItem("ID").Value, i.InnerText, i.Attributes.GetNamedItem("Remarks").Value));
                 }
@@ -82,23 +82,37 @@ namespace SRC_System
             }
         }
         private void FromTo_Change(object sender, EventArgs e)
-        {
+        {            
             string options = "";
-            if (fromInput.Text.Length > 3 && toInput.Text.Length > 3)
+            string from = "    ";
+            string to = "    ";
+            if (fromInput.Text.Length == 2  || fromInput.Text.Length == 4)
             {
-                foreach (var x in routes.Where(d => d.Designator.Substring(0, 2) == fromInput.Text.Substring(2, 2)).Where(a => a.Designator.Substring(2, 2) == toInput.Text.Substring(2, 2)))
-                {
-                    options += x.Designator + " | " + x.Routing;
-                    if (x.Remarks != "")
-                        options += " | " + x.Remarks;
-                    options += "\n";
-                }
+                from = fromInput.Text.Substring(fromInput.Text.Length - 2, 2);
             }
+            if (toInput.Text.Length == 2 || toInput.Text.Length == 4)
+            {
+                to = toInput.Text.Substring(toInput.Text.Length - 2, 2);
+            }
+
+            foreach (var x in routes.Where(d => d.Designator.Substring(0, 2) == from.Substring(0, 2)).Where(a => a.Designator.Substring(2, 2) == to.Substring(0, 2)))
+            {
+                options += x.Designator + " | " + x.Routing;
+                if (x.Remarks != "")
+                    options += " | " + x.Remarks;
+                options += "\n";
+            }
+
             SRCOptions.Text = options;
         }
         private void Form1_Resize(object sender, EventArgs e)
         {
             SRCOptions.Width = Convert.ToInt32(Width - 270);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
     public struct StandardRoute
