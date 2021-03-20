@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using vatsys;
 using System.Linq;
 using System.Xml;
+using System.Threading.Tasks;
+
 
 namespace SRC_System
 {
@@ -108,6 +110,37 @@ namespace SRC_System
         private void Form1_Resize(object sender, EventArgs e)
         {
             SRCOptions.Width = Convert.ToInt32(Width - 270);
+        }
+
+        private async void routing_Click(object sender, EventArgs e)
+        {
+            if (routing.Text == "Route: NONE")
+                return;
+            System.Windows.Forms.Clipboard.SetText(routing.Text.Substring(6, routing.Text.Length - 6));
+            string preText = routing.Text;
+            routing.Text = "COPIED";
+            await Task.Delay(1000);
+            routing.Text = preText;
+        }
+        private async void routeDesignator_Click(object sender, EventArgs e)
+        {
+            if(routeDesignator.Text == "Designator: NONE")
+                return;
+            System.Windows.Forms.Clipboard.SetText(routeDesignator.Text.Substring(12, routeDesignator.Text.Length - 12));
+            string preText = routeDesignator.Text;
+            routeDesignator.Text = "COPIED";
+            await Task.Delay(1000);
+            routeDesignator.Text = preText;
+        }
+        private async void routeRemarks_Click(object sender, EventArgs e)
+        {
+            if (routeRemarks.Text == "Remarks: NONE")
+                return;
+            System.Windows.Forms.Clipboard.SetText(routeRemarks.Text.Substring(9, routeRemarks.Text.Length - 9));
+            string preText = routeRemarks.Text;
+            routeRemarks.Text = "COPIED";
+            await Task.Delay(1000);
+            routeRemarks.Text = preText;
         }
     }
     public struct StandardRoute

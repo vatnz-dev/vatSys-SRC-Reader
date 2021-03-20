@@ -81,6 +81,7 @@ namespace SRC_System
             this.routeRemarks.TabIndex = 2;
             this.routeRemarks.Text = "Remarks: NONE";
             this.routeRemarks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.routeRemarks.Click += new System.EventHandler(this.routeRemarks_Click);
             // 
             // routing
             // 
@@ -92,6 +93,7 @@ namespace SRC_System
             this.routing.TabIndex = 3;
             this.routing.Text = "Route: NONE";
             this.routing.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.routing.Click += new System.EventHandler(this.routing_Click);
             // 
             // routeDesignator
             // 
@@ -104,6 +106,7 @@ namespace SRC_System
             this.routeDesignator.TabIndex = 4;
             this.routeDesignator.Text = "Designator: NONE";
             this.routeDesignator.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.routeDesignator.Click += new System.EventHandler(this.routeDesignator_Click);
             // 
             // fromInput
             // 
