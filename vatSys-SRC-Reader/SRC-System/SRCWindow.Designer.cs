@@ -79,7 +79,7 @@ namespace SRC_System
             this.routeRemarks.Name = "routeRemarks";
             this.routeRemarks.Size = new System.Drawing.Size(700, 25);
             this.routeRemarks.TabIndex = 2;
-            this.routeRemarks.Text = "Remarks:";
+            this.routeRemarks.Text = "Remarks: NONE";
             this.routeRemarks.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // routing
