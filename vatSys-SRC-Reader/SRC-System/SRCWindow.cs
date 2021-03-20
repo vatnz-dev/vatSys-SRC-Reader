@@ -82,11 +82,11 @@ namespace SRC_System
             }
         }
         private void FromTo_Change(object sender, EventArgs e)
-        {            
+        {
             string options = "";
             string from = "    ";
             string to = "    ";
-            if (fromInput.Text.Length == 2  || fromInput.Text.Length == 4)
+            if (fromInput.Text.Length == 2 || fromInput.Text.Length == 4)
             {
                 from = fromInput.Text.Substring(fromInput.Text.Length - 2, 2);
             }
@@ -108,11 +108,6 @@ namespace SRC_System
         private void Form1_Resize(object sender, EventArgs e)
         {
             SRCOptions.Width = Convert.ToInt32(Width - 270);
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
     public struct StandardRoute
