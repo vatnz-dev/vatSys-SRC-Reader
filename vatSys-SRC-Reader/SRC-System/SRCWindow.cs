@@ -4,7 +4,7 @@ using vatsys;
 using System.Linq;
 using System.Xml;
 using System.Threading.Tasks;
-
+using System.Windows.Forms;
 
 namespace SRC_System
 {
@@ -21,8 +21,27 @@ namespace SRC_System
             XmlDocument xmlDoc = new XmlDocument();
             string location = System.Reflection.Assembly.GetExecutingAssembly().Location;
             location = location.Substring(0, location.Length - System.Reflection.Assembly.GetExecutingAssembly().GetName().Name.Length - 4) + "/SRC-System/Routes.xml";
-            xmlDoc.Load(location);
-
+            while (true)
+            {
+                try
+                {
+                    xmlDoc.Load(location);
+                    break;
+                }
+                catch
+                {
+                    DialogResult result = openFileDialog1.ShowDialog();
+                    if (result == DialogResult.OK)
+                    {
+                        location = openFileDialog1.FileName;
+                    }
+                    else if(result == DialogResult.Cancel)
+                    {
+                        Close();
+                        break;
+                    }
+                }
+            }
 
             foreach (XmlNode x in xmlDoc.ChildNodes[0].ChildNodes)
             {

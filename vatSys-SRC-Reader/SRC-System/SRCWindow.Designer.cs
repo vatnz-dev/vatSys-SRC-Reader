@@ -42,6 +42,7 @@ namespace SRC_System
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // routeDesignatorInput
@@ -193,6 +194,12 @@ namespace SRC_System
             this.label5.TabIndex = 12;
             this.label5.Text = "Click on The Route, Remarks, or Designator to Copy it";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "XML Files (*.xml)|*.xml|All files (*.*)|*.*";
+            this.openFileDialog1.Title = "Standard Route Library Location";
+            // 
             // SRCWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -237,5 +244,6 @@ namespace SRC_System
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
