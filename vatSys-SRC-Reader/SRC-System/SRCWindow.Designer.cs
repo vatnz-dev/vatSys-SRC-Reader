@@ -41,6 +41,7 @@ namespace SRC_System
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // routeDesignatorInput
@@ -182,12 +183,23 @@ namespace SRC_System
             this.label4.TabIndex = 11;
             this.label4.Text = "To";
             // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Terminus (TTF)", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label5.Location = new System.Drawing.Point(6, 292);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(155, 21);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Click on The Route, Remarks, or Designator to Copy it";
+            // 
             // SRCWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(696, 322);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -203,7 +215,7 @@ namespace SRC_System
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.MinimumSize = new System.Drawing.Size(650, 285);
             this.Name = "SRCWindow";
-            this.Text = "SRCWindow";
+            this.Text = "Standard Route Tool";
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -224,5 +236,6 @@ namespace SRC_System
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
