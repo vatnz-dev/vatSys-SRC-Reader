@@ -29,6 +29,7 @@ namespace SRC_System_Standalone
         /// </summary>
         private void InitializeComponent()
         {           
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SRCWindow));
             this.routeDesignatorInput = new System.Windows.Forms.TextBox();
             this.routingInput = new System.Windows.Forms.TextBox();
             this.routeRemarks = new System.Windows.Forms.Label();
@@ -223,6 +224,7 @@ namespace SRC_System_Standalone
             this.Controls.Add(this.routingInput);
             this.Controls.Add(this.routeDesignatorInput);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(492, 227);
             this.Name = "SRCWindow";
