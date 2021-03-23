@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace StandlondSRC_Tool.Properties
+namespace SRC_System_Standalone.Properties
 {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
@@ -43,7 +43,7 @@ namespace StandlondSRC_Tool.Properties
             {
                 if ((resourceMan == null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("StandlondSRC_Tool.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SRC_System_Standalone.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

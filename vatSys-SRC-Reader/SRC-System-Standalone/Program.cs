@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SRC_System;
-namespace StandlondSRC_Tool
+
+namespace SRC_System_Standalone
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace StandlondSRC_Tool
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SRCWindow());         
+            Application.Run(new SRCWindow());
         }
     }
 }

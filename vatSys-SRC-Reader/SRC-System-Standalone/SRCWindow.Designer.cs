@@ -1,5 +1,5 @@
 ﻿using System.Drawing;
-namespace SRC_System
+namespace SRC_System_Standalone
 {
     partial class SRCWindow
     {
@@ -149,7 +149,7 @@ namespace SRC_System
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label1.Location = new System.Drawing.Point(20, 1);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 17);
+            this.label1.Size = new System.Drawing.Size(117, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Route Designator Input";
             // 
@@ -160,7 +160,7 @@ namespace SRC_System
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label2.Location = new System.Drawing.Point(375, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 17);
+            this.label2.Size = new System.Drawing.Size(71, 13);
             this.label2.TabIndex = 9;
             this.label2.Text = "Routing Input";
             // 
@@ -170,7 +170,7 @@ namespace SRC_System
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label3.Location = new System.Drawing.Point(23, 153);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 17);
+            this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 10;
             this.label3.Text = "From";
             // 
@@ -180,15 +180,16 @@ namespace SRC_System
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label4.Location = new System.Drawing.Point(120, 153);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(24, 17);
+            this.label4.Size = new System.Drawing.Size(20, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "To";
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.Font = new System.Drawing.Font("Terminus (TTF)", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label5.Location = new System.Drawing.Point(6, 292);
+            this.label5.Location = new System.Drawing.Point(12, 320);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(155, 21);
             this.label5.TabIndex = 12;
@@ -220,7 +221,7 @@ namespace SRC_System
             this.Controls.Add(this.routingInput);
             this.Controls.Add(this.routeDesignatorInput);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(492, 227);
             this.Name = "SRCWindow";
             this.Text = "Standard Route Tool";

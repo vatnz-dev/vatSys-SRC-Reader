@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("StandlondSRC-Tool")]
+[assembly: AssemblyTitle("SRC-System-Standalone")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("StandlondSRC-Tool")]
+[assembly: AssemblyProduct("SRC-System-Standalone")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("255d456b-cb40-4ba9-9d29-d93d611aa358")]
+[assembly: Guid("362a5c14-250b-4ebe-957c-bd3270d03e02")]
 
 // Version information for an assembly consists of the following four values:
 //
