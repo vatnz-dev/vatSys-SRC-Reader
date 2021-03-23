@@ -202,10 +202,10 @@ namespace SRC_System
             // 
             // SRCWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(696, 322);
+            this.ClientSize = new System.Drawing.Size(750, 350);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -220,7 +220,8 @@ namespace SRC_System
             this.Controls.Add(this.routingInput);
             this.Controls.Add(this.routeDesignatorInput);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.MinimumSize = new System.Drawing.Size(650, 285);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MinimumSize = new System.Drawing.Size(492, 227);
             this.Name = "SRCWindow";
             this.Text = "Standard Route Tool";
             this.Resize += new System.EventHandler(this.Form1_Resize);

@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using System.IO;
 namespace SRC_System
 {
-    public partial class SRCWindow : BaseForm
+    public partial class SRCWindow : Form
     {
         public SRCWindow()
         {
