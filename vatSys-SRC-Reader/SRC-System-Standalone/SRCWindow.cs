@@ -170,11 +170,6 @@ namespace SRC_System_Standalone
             await Task.Delay(1000);
             routeRemarks.Text = preText;
         }
-
-        private void SRCWindow_Load(object sender, EventArgs e)
-        {
-
-        }
     }
     public struct StandardRoute
     {

@@ -1,5 +1,4 @@
 ﻿using System.Drawing;
-using JDragControl;
 namespace SRC_System_Standalone
 {
     partial class SRCWindow
@@ -45,13 +44,6 @@ namespace SRC_System_Standalone
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // routeDesignatorInput
@@ -60,7 +52,7 @@ namespace SRC_System_Standalone
             this.routeDesignatorInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.routeDesignatorInput.Font = new System.Drawing.Font("Terminus (TTF)", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.routeDesignatorInput.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.routeDesignatorInput.Location = new System.Drawing.Point(25, 51);
+            this.routeDesignatorInput.Location = new System.Drawing.Point(20, 20);
             this.routeDesignatorInput.Name = "routeDesignatorInput";
             this.routeDesignatorInput.Size = new System.Drawing.Size(300, 27);
             this.routeDesignatorInput.TabIndex = 0;
@@ -74,7 +66,7 @@ namespace SRC_System_Standalone
             this.routingInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.routingInput.Font = new System.Drawing.Font("Terminus (TTF)", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.routingInput.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.routingInput.Location = new System.Drawing.Point(403, 51);
+            this.routingInput.Location = new System.Drawing.Point(375, 20);
             this.routingInput.Name = "routingInput";
             this.routingInput.Size = new System.Drawing.Size(300, 27);
             this.routingInput.TabIndex = 1;
@@ -86,7 +78,7 @@ namespace SRC_System_Standalone
             this.routeRemarks.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.routeRemarks.Font = new System.Drawing.Font("Terminus (TTF)", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.routeRemarks.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.routeRemarks.Location = new System.Drawing.Point(14, 156);
+            this.routeRemarks.Location = new System.Drawing.Point(-2, 125);
             this.routeRemarks.Name = "routeRemarks";
             this.routeRemarks.Size = new System.Drawing.Size(700, 25);
             this.routeRemarks.TabIndex = 2;
@@ -98,7 +90,7 @@ namespace SRC_System_Standalone
             // 
             this.routing.Font = new System.Drawing.Font("Terminus (TTF)", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.routing.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.routing.Location = new System.Drawing.Point(25, 81);
+            this.routing.Location = new System.Drawing.Point(20, 50);
             this.routing.Name = "routing";
             this.routing.Size = new System.Drawing.Size(300, 75);
             this.routing.TabIndex = 3;
@@ -111,7 +103,7 @@ namespace SRC_System_Standalone
             this.routeDesignator.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.routeDesignator.Font = new System.Drawing.Font("Terminus (TTF)", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.routeDesignator.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.routeDesignator.Location = new System.Drawing.Point(403, 81);
+            this.routeDesignator.Location = new System.Drawing.Point(375, 50);
             this.routeDesignator.Name = "routeDesignator";
             this.routeDesignator.Size = new System.Drawing.Size(300, 75);
             this.routeDesignator.TabIndex = 4;
@@ -125,7 +117,7 @@ namespace SRC_System_Standalone
             this.fromInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.fromInput.Font = new System.Drawing.Font("Terminus (TTF)", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.fromInput.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.fromInput.Location = new System.Drawing.Point(28, 204);
+            this.fromInput.Location = new System.Drawing.Point(23, 173);
             this.fromInput.Name = "fromInput";
             this.fromInput.Size = new System.Drawing.Size(80, 27);
             this.fromInput.TabIndex = 5;
@@ -137,7 +129,7 @@ namespace SRC_System_Standalone
             this.toInput.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.toInput.Font = new System.Drawing.Font("Terminus (TTF)", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.toInput.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.toInput.Location = new System.Drawing.Point(128, 204);
+            this.toInput.Location = new System.Drawing.Point(123, 173);
             this.toInput.Name = "toInput";
             this.toInput.Size = new System.Drawing.Size(80, 27);
             this.toInput.TabIndex = 6;
@@ -147,7 +139,7 @@ namespace SRC_System_Standalone
             // 
             this.SRCOptions.Font = new System.Drawing.Font("Terminus (TTF)", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.SRCOptions.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.SRCOptions.Location = new System.Drawing.Point(249, 149);
+            this.SRCOptions.Location = new System.Drawing.Point(250, 150);
             this.SRCOptions.Name = "SRCOptions";
             this.SRCOptions.Size = new System.Drawing.Size(460, 300);
             this.SRCOptions.TabIndex = 7;
@@ -157,7 +149,7 @@ namespace SRC_System_Standalone
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Terminus (TTF)", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label1.Location = new System.Drawing.Point(25, 32);
+            this.label1.Location = new System.Drawing.Point(20, 1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 17);
             this.label1.TabIndex = 8;
@@ -169,7 +161,7 @@ namespace SRC_System_Standalone
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Terminus (TTF)", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label2.Location = new System.Drawing.Point(403, 31);
+            this.label2.Location = new System.Drawing.Point(375, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 17);
             this.label2.TabIndex = 9;
@@ -179,7 +171,7 @@ namespace SRC_System_Standalone
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label3.Location = new System.Drawing.Point(28, 184);
+            this.label3.Location = new System.Drawing.Point(23, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 10;
@@ -189,7 +181,7 @@ namespace SRC_System_Standalone
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label4.Location = new System.Drawing.Point(125, 184);
+            this.label4.Location = new System.Drawing.Point(120, 153);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(20, 13);
             this.label4.TabIndex = 11;
@@ -200,7 +192,7 @@ namespace SRC_System_Standalone
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.Font = new System.Drawing.Font("Terminus (TTF)", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label5.Location = new System.Drawing.Point(12, 364);
+            this.label5.Location = new System.Drawing.Point(12, 320);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(155, 21);
             this.label5.TabIndex = 12;
@@ -212,71 +204,12 @@ namespace SRC_System_Standalone
             this.openFileDialog1.Filter = "XML Files (*.xml)|*.xml|All files (*.*)|*.*";
             this.openFileDialog1.Title = "Standard Route Library Location";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(768, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(5, 394);
-            this.panel1.TabIndex = 13;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel2.Controls.Add(this.flowLayoutPanel1);
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Location = new System.Drawing.Point(0, 389);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(773, 5);
-            this.panel2.TabIndex = 14;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 100);
-            this.panel4.TabIndex = 0;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 394);
-            this.panel3.TabIndex = 15;
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(775, 5);
-            this.panel5.TabIndex = 16;
-            // 
             // SRCWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.ClientSize = new System.Drawing.Size(773, 394);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(750, 350);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -296,9 +229,7 @@ namespace SRC_System_Standalone
             this.MinimumSize = new System.Drawing.Size(492, 227);
             this.Name = "SRCWindow";
             this.Text = "Standard Route Tool";
-            this.Load += new System.EventHandler(this.SRCWindow_Load);
             this.Resize += new System.EventHandler(this.Form1_Resize);
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,11 +251,5 @@ namespace SRC_System_Standalone
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panel5;
     }
 }
