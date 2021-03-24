@@ -85,5 +85,11 @@
   <ItemGroup>
     <Content Include="vatnz.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RouteUtil\RouteUtil.csproj">
+      <Project>{6a7753dd-c041-4e83-9e14-f54aedc9c141}</Project>
+      <Name>RouteUtil</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
