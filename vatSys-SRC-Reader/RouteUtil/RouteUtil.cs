@@ -14,6 +14,7 @@ namespace RouteUtil
     {
         public static void LoadRoutes(Form form, OpenFileDialog openFileDialog1)
         {
+            routes.Clear();
             XmlDocument xmlDoc = new XmlDocument();
             string location = System.Reflection.Assembly.GetExecutingAssembly().Location;
             location = location.Substring(0, location.Length - System.Reflection.Assembly.GetExecutingAssembly().GetName().Name.Length - 4) + "/SRC-System/Routes.xml";
