@@ -170,20 +170,22 @@ namespace SRC_System_Standalone
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Terminus (TTF)", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label3.Location = new System.Drawing.Point(23, 175);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(30, 13);
+            this.label3.Size = new System.Drawing.Size(40, 17);
             this.label3.TabIndex = 10;
             this.label3.Text = "From";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Terminus (TTF)", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label4.Location = new System.Drawing.Point(120, 175);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(20, 13);
+            this.label4.Size = new System.Drawing.Size(24, 17);
             this.label4.TabIndex = 11;
             this.label4.Text = "To";
             // 
