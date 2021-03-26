@@ -18,11 +18,11 @@ namespace SRC_System
         }
         private void RouteDesignator_Change(object sender, EventArgs e)
         {
-            RouteUtil.RouteUtil.RouteDesignator_Change(routeDesignatorInput, routing, routeRemarks);
+            RouteUtil.RouteUtil.RouteDesignator_Change(routeDesignatorInput, routing, routeRemarks, fromInput, toInput);
         }
         private void Routing_Change(object sender, EventArgs e)
         {
-            RouteUtil.RouteUtil.Routing_Change(routingInput, routeDesignator, routeRemarks);
+            RouteUtil.RouteUtil.Routing_Change(routingInput, routeDesignator, routeRemarks, fromInput, toInput);
         }
         private void FromTo_Change(object sender, EventArgs e)
         {

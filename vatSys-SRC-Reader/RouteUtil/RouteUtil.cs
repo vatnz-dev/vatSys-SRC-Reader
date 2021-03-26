@@ -59,7 +59,7 @@ namespace RouteUtil
             }
         }
         public static List<StandardRoute> routes = new List<StandardRoute>();
-        public static void RouteDesignator_Change(TextBox routeDesignatorInput, Label routing, Label routeRemarks)
+        public static void RouteDesignator_Change(TextBox routeDesignatorInput, Label routing, Label routeRemarks, TextBox fromInput, TextBox toInput)
         {
             string selectedDesignator = routeDesignatorInput.Text;
             if (routes.Select(x => x.Designator).Contains(selectedDesignator))
@@ -70,14 +70,18 @@ namespace RouteUtil
                     routeRemarks.Text = "Remarks: NONE";
                 else
                     routeRemarks.Text = "Remarks: " + routeObj.Remarks;
+                fromInput.Text = routeObj.Designator.Substring(0, 2);
+                toInput.Text = routeObj.Designator.Substring(2, 2);
             }
             else
             {
                 routing.Text = "Route: NONE";
-                routeRemarks.Text = "Remarks: NONE";
+                routeRemarks.Text = "Remarks: NONE"; 
+                fromInput.Text = "";
+                toInput.Text = "";
             }
         }
-        public static void Routing_Change(TextBox routingInput, Label routeDesignator, Label routeRemarks)
+        public static void Routing_Change(TextBox routingInput, Label routeDesignator, Label routeRemarks, TextBox fromInput, TextBox toInput)
         {
             string selectedRouting = routingInput.Text;
             bool routeExists = false;
@@ -98,11 +102,15 @@ namespace RouteUtil
                     routeRemarks.Text = "Remarks: NONE";
                 else
                     routeRemarks.Text = "Remarks: " + foundRoute.Remarks;
+                fromInput.Text = foundRoute.Designator.Substring(0, 2);
+                toInput.Text = foundRoute.Designator.Substring(2, 2);
             }
             else
             {
                 routeDesignator.Text = "Designator: NONE";
                 routeRemarks.Text = "Remarks: NONE";
+                fromInput.Text = "";
+                toInput.Text = "";
             }
         }
         public static void FromTo_Change(TextBox fromInput, TextBox toInput, Label SRCOptions)

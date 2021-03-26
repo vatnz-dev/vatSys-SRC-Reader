@@ -14,14 +14,14 @@ namespace SRC_System_Standalone
             InitializeComponent();
             Form1_Resize(null, null);
             RouteUtil.RouteUtil.LoadRoutes(this, openFileDialog1);
-        }     
+        }
         private void RouteDesignator_Change(object sender, EventArgs e)
         {
-            RouteUtil.RouteUtil.RouteDesignator_Change(routeDesignatorInput, routing, routeRemarks);
+            RouteUtil.RouteUtil.RouteDesignator_Change(routeDesignatorInput, routing, routeRemarks, fromInput, toInput);
         }
         private void Routing_Change(object sender, EventArgs e)
         {
-            RouteUtil.RouteUtil.Routing_Change(routingInput, routeDesignator, routeRemarks);
+            RouteUtil.RouteUtil.Routing_Change(routingInput, routeDesignator, routeRemarks, fromInput, toInput);
         }
         private void FromTo_Change(object sender, EventArgs e)
         {
