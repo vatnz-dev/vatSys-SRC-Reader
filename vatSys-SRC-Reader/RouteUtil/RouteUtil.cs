@@ -72,7 +72,10 @@ namespace RouteUtil
                 if (routeObj.Remarks == "")
                     routeRemarks.Text = "";
                 else
+                {
                     routeRemarks.Text = routeObj.Remarks;
+                    routeRemarks.Text = routeRemarks.Text.Replace(";", "\n");
+                }
                 fromInput.Text = routeObj.Designator.Substring(0, 2);
                 toInput.Text = routeObj.Designator.Substring(2, 2);
             }
@@ -107,7 +110,10 @@ namespace RouteUtil
                 if (foundRoute.Remarks == "")
                     routeRemarks.Text = "";
                 else
+                {
                     routeRemarks.Text = foundRoute.Remarks;
+                    routeRemarks.Text = routeRemarks.Text.Replace(";", "\n");
+                }
                 fromInput.Text = foundRoute.Designator.Substring(0, 2);
                 toInput.Text = foundRoute.Designator.Substring(2, 2);
             }
