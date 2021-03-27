@@ -138,10 +138,7 @@ namespace RouteUtil
 
             foreach (var x in routes.Where(d => d.Designator.Substring(0, 2) == from.Substring(0, 2)).Where(a => a.Designator.Substring(2, 2) == to.Substring(0, 2)))
             {
-                options += x.Designator + " | " + x.Routing;
-                if (x.Remarks != "")
-                    options += " | " + x.Remarks;
-                options += '\n';
+                options += x.Designator + " | " + x.Routing + '\n';
             }
             if (options.Length > 0)
                 options = options.Remove(options.Length - 1, 1);
