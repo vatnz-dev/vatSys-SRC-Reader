@@ -59,7 +59,7 @@ namespace RouteUtil
             }
         }
         public static List<StandardRoute> routes = new List<StandardRoute>();
-        public static void RouteDesignator_Change(TextBox routeDesignatorInput, Label routing, Label routeRemarks, TextBox fromInput, TextBox toInput)
+        public static void RouteDesignator_Change(TextBox routeDesignatorInput, Label routing, RichTextBox routeRemarks, TextBox fromInput, TextBox toInput)
         {
             string selectedDesignator = routeDesignatorInput.Text;
             if (routes.Select(x => x.Designator).Contains(selectedDesignator))
@@ -67,21 +67,21 @@ namespace RouteUtil
                 var routeObj = routes.Find(x => x.Designator == selectedDesignator);
                 routing.Text = "Route: " + routeObj.Routing;
                 if (routeObj.Remarks == "")
-                    routeRemarks.Text = "Remarks: NONE";
+                    routeRemarks.Text = "";
                 else
-                    routeRemarks.Text = "Remarks: " + routeObj.Remarks;
+                    routeRemarks.Text = routeObj.Remarks;
                 fromInput.Text = routeObj.Designator.Substring(0, 2);
                 toInput.Text = routeObj.Designator.Substring(2, 2);
             }
             else
             {
                 routing.Text = "Route: NONE";
-                routeRemarks.Text = "Remarks: NONE"; 
+                routeRemarks.Text = ""; 
                 fromInput.Text = "";
                 toInput.Text = "";
             }
         }
-        public static void Routing_Change(TextBox routingInput, Label routeDesignator, Label routeRemarks, TextBox fromInput, TextBox toInput)
+        public static void Routing_Change(TextBox routingInput, Label routeDesignator, RichTextBox routeRemarks, TextBox fromInput, TextBox toInput)
         {
             string selectedRouting = routingInput.Text;
             bool routeExists = false;
@@ -99,16 +99,16 @@ namespace RouteUtil
             {
                 routeDesignator.Text = "Designator: " + foundRoute.Designator;
                 if (foundRoute.Remarks == "")
-                    routeRemarks.Text = "Remarks: NONE";
+                    routeRemarks.Text = "";
                 else
-                    routeRemarks.Text = "Remarks: " + foundRoute.Remarks;
+                    routeRemarks.Text = foundRoute.Remarks;
                 fromInput.Text = foundRoute.Designator.Substring(0, 2);
                 toInput.Text = foundRoute.Designator.Substring(2, 2);
             }
             else
             {
                 routeDesignator.Text = "Designator: NONE";
-                routeRemarks.Text = "Remarks: NONE";
+                routeRemarks.Text = "";
                 fromInput.Text = "";
                 toInput.Text = "";
             }
@@ -158,7 +158,7 @@ namespace RouteUtil
             await Task.Delay(1000);
             routeDesignator.Text = preText;
         }
-        public static async void routeRemarks_Click(Label routeRemarks)
+        public static async void routeRemarks_Click(RichTextBox routeRemarks)
         {
             if (routeRemarks.Text == "Remarks: NONE")
                 return;

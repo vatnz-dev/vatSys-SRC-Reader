@@ -13,7 +13,6 @@ namespace SRC_System
         public SRCWindow()
         {
             InitializeComponent();
-            Form1_Resize(null, null);
             RouteUtil.RouteUtil.LoadRoutes(this, openFileDialog1);
         }
         private void RouteDesignator_Change(object sender, EventArgs e)
@@ -27,10 +26,6 @@ namespace SRC_System
         private void FromTo_Change(object sender, EventArgs e)
         {
             RouteUtil.RouteUtil.FromTo_Change(fromInput, toInput, SRCOptions);
-        }
-        private void Form1_Resize(object sender, EventArgs e)
-        {
-            SRCOptions.Width = Convert.ToInt32(Width - 270);
         }
         private void routing_Click(object sender, EventArgs e)
         {
