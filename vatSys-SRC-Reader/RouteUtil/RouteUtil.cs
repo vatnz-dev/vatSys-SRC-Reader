@@ -125,7 +125,7 @@ namespace RouteUtil
                 toInput.Text = "";
             }
         }
-        public static void FromTo_Change(TextBox fromInput, TextBox toInput, Label SRCOptions)
+        public static void FromTo_Change(TextBox fromInput, TextBox toInput, Form form, TextBox routeDesignatorInput, TextBox routingInput )
         {
             string options = "";
             string from = "    ";
@@ -144,10 +144,32 @@ namespace RouteUtil
                 options += x.Designator + " | " + x.Routing;
                 if (x.Remarks != "")
                     options += " | " + x.Remarks;
-                options += "\n\n";
+                options += '\n';
             }
-
-            SRCOptions.Text = options;
+            if (options.Length > 0)
+                options = options.Remove(options.Length - 1, 1);
+            foreach(var i in (form.Controls.Find("SRCPanel", true)[0] as FlowLayoutPanel).Controls.Find("SRCOption", true))
+            {
+                (form.Controls.Find("SRCPanel", true)[0] as FlowLayoutPanel).Controls.Remove(i);
+            }
+            lastLabel = null;
+            for (int i = 0; i < options.Split('\n').Length; i++)
+            {
+                Label label = new Label
+                {
+                    MaximumSize = new System.Drawing.Size(275, 1000),
+                    MinimumSize = new System.Drawing.Size(275, 0),
+                    Font = new System.Drawing.Font("Terminus (TTF)", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel),
+                    ForeColor = System.Drawing.SystemColors.ControlDarkDark,
+                    AutoSize = true,
+                    Name = "SRCOption",
+                    TextAlign = System.Drawing.ContentAlignment.TopCenter,
+                    Text = options.Split('\n')[i],
+                    Margin = new Padding(0, 0, 0, 15)
+                };  
+                label.Click += (sender, e) => SRC_Click(sender, e, label, routeDesignatorInput, routingInput);
+                (form.Controls.Find("SRCPanel", true)[0] as FlowLayoutPanel).Controls.Add(label);                
+            }
         }
 
         public static async void routing_Click(Label routing)
@@ -180,6 +202,17 @@ namespace RouteUtil
             routeRemarks.Text = "COPIED";
             await Task.Delay(1000);
             routeRemarks.Text = preText;
+        }
+        public static Label lastLabel = null;
+        public static void SRC_Click(object sender, EventArgs e, Label src, TextBox routeDesignatorInput, TextBox routingInput)
+        {
+            routeDesignatorInput.Text = src.Text.Substring(0, 5);
+            var route = routes.Find(x => x.Designator == routeDesignatorInput.Text);
+            routingInput.Text = route.Routing;
+            if (lastLabel != null)
+                lastLabel.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            src.ForeColor = System.Drawing.SystemColors.ControlDark;
+            lastLabel = src;
         }
     }
     public struct StandardRoute

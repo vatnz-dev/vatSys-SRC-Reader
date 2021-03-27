@@ -38,11 +38,11 @@ namespace SRC_System
             this.toInput = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.SRCOptions = new System.Windows.Forms.Label();
             this.routeRemarks = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.routing = new System.Windows.Forms.Label();
             this.routeDesignator = new System.Windows.Forms.Label();
+            this.SRCPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -150,16 +150,6 @@ namespace SRC_System
             this.label4.TabIndex = 7;
             this.label4.Text = "To";
             // 
-            // SRCOptions
-            // 
-            this.SRCOptions.Font = new System.Drawing.Font("Terminus (TTF)", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.SRCOptions.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.SRCOptions.Location = new System.Drawing.Point(23, 172);
-            this.SRCOptions.Name = "SRCOptions";
-            this.SRCOptions.Size = new System.Drawing.Size(275, 193);
-            this.SRCOptions.TabIndex = 8;
-            this.SRCOptions.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // routeRemarks
             // 
             this.routeRemarks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -214,17 +204,24 @@ namespace SRC_System
             this.routeDesignator.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.routeDesignator.Click += new System.EventHandler(this.routeDesignator_Click);
             // 
+            // SRCPanel
+            // 
+            this.SRCPanel.Location = new System.Drawing.Point(23, 175);
+            this.SRCPanel.Name = "SRCPanel";
+            this.SRCPanel.Size = new System.Drawing.Size(275, 467);
+            this.SRCPanel.TabIndex = 13;
+            // 
             // SRCWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(696, 296);
+            this.Controls.Add(this.SRCPanel);
             this.Controls.Add(this.routeDesignator);
             this.Controls.Add(this.routing);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.routeRemarks);
-            this.Controls.Add(this.SRCOptions);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.toInput);
@@ -253,10 +250,10 @@ namespace SRC_System
         private System.Windows.Forms.TextBox toInput;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label SRCOptions;
         private System.Windows.Forms.RichTextBox routeRemarks;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label routing;
         private System.Windows.Forms.Label routeDesignator;
+        private System.Windows.Forms.FlowLayoutPanel SRCPanel;
     }
 }
