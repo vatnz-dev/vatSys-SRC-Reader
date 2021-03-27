@@ -89,14 +89,15 @@ namespace SRCXmlTool
             // 
             this.richTextBox1.Location = new System.Drawing.Point(12, 123);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(565, 315);
+            this.richTextBox1.Size = new System.Drawing.Size(982, 315);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(583, 64);
+            this.label3.Location = new System.Drawing.Point(583, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(411, 78);
             this.label3.TabIndex = 5;
@@ -105,7 +106,7 @@ namespace SRCXmlTool
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(603, 415);
+            this.button2.Location = new System.Drawing.Point(456, 60);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 23);
             this.button2.TabIndex = 6;
