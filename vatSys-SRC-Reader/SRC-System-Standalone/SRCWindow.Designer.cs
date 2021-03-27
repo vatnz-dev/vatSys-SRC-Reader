@@ -37,13 +37,13 @@ namespace SRC_System_Standalone
             this.routeDesignator = new System.Windows.Forms.Label();
             this.fromInput = new System.Windows.Forms.TextBox();
             this.toInput = new System.Windows.Forms.TextBox();
-            this.SRCOptions = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.SRCPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // routeDesignatorInput
@@ -138,16 +138,6 @@ namespace SRC_System_Standalone
             this.toInput.TabIndex = 5;
             this.toInput.TextChanged += new System.EventHandler(this.FromTo_Change);
             // 
-            // SRCOptions
-            // 
-            this.SRCOptions.Font = new System.Drawing.Font("Terminus (TTF)", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.SRCOptions.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.SRCOptions.Location = new System.Drawing.Point(23, 172);
-            this.SRCOptions.Name = "SRCOptions";
-            this.SRCOptions.Size = new System.Drawing.Size(275, 193);
-            this.SRCOptions.TabIndex = 8;
-            this.SRCOptions.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -215,18 +205,26 @@ namespace SRC_System_Standalone
             this.openFileDialog1.Filter = "XML Files (*.xml)|*.xml|All files (*.*)|*.*";
             this.openFileDialog1.Title = "Standard Route Library Location";
             // 
+            // SRCPanel
+            // 
+            this.SRCPanel.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.SRCPanel.Location = new System.Drawing.Point(23, 172);
+            this.SRCPanel.Name = "SRCPanel";
+            this.SRCPanel.Size = new System.Drawing.Size(275, 346);
+            this.SRCPanel.TabIndex = 13;
+            // 
             // SRCWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(711, 313);
+            this.Controls.Add(this.SRCPanel);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.SRCOptions);
             this.Controls.Add(this.toInput);
             this.Controls.Add(this.fromInput);
             this.Controls.Add(this.routeDesignator);
@@ -255,12 +253,12 @@ namespace SRC_System_Standalone
         private System.Windows.Forms.Label routeDesignator;
         private System.Windows.Forms.TextBox fromInput;
         private System.Windows.Forms.TextBox toInput;
-        private System.Windows.Forms.Label SRCOptions;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.FlowLayoutPanel SRCPanel;
     }
 }
