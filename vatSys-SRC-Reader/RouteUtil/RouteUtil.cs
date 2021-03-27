@@ -61,9 +61,8 @@ namespace RouteUtil
         public static List<StandardRoute> routes = new List<StandardRoute>();
         public static void RouteDesignator_Change(TextBox routeDesignatorInput, Label routing, RichTextBox routeRemarks, TextBox fromInput, TextBox toInput)
         {
-            if(routeDesignatorInput.Text.Length > 0)
-                if (routeDesignatorInput.Text[0] == ' ')
-                    routeDesignatorInput.Text = routeDesignatorInput.Text.Remove(0, 1); 
+            //Remove Any Extra Whitespace at Start of Text Box   
+            routeDesignatorInput.Text = routeDesignatorInput.Text.Trim();
             string selectedDesignator = routeDesignatorInput.Text;
             if (routes.Select(x => x.Designator).Contains(selectedDesignator))
             {
@@ -89,9 +88,7 @@ namespace RouteUtil
         }
         public static void Routing_Change(TextBox routingInput, Label routeDesignator, RichTextBox routeRemarks, TextBox fromInput, TextBox toInput)
         {
-            if (routingInput.Text.Length > 0)
-                if (routingInput.Text[0] == ' ')
-                routingInput.Text = routingInput.Text.Remove(0, 1);
+            routingInput.Text = routingInput.Text.Trim();
             string selectedRouting = routingInput.Text;
             bool routeExists = false;
             StandardRoute foundRoute = new StandardRoute();
