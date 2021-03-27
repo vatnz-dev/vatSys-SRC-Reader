@@ -138,7 +138,7 @@ namespace RouteUtil
                 options += x.Designator + " | " + x.Routing;
                 if (x.Remarks != "")
                     options += " | " + x.Remarks;
-                options += "\n";
+                options += "\n\n";
             }
 
             SRCOptions.Text = options;
