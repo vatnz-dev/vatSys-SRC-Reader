@@ -119,7 +119,7 @@ namespace RouteUtil
                 else
                 {
                     routeRemarks.Text = foundRoute.Remarks;
-                    routeRemarks.Text = routeRemarks.Text.Replace(";", "\n");
+                    routeRemarks.Text = routeRemarks.Text.Replace(";", "\n\n");
                 }
                 fromInput.Text = foundRoute.Designator.Substring(0, 2);
                 toInput.Text = foundRoute.Designator.Substring(2, 2);
