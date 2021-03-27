@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
 using System.Xml;
-
+using System.Net;
 namespace RouteUtil
 {
     public static class RouteUtil
     {
         public static void LoadRoutes(Form form, OpenFileDialog openFileDialog1)
         {
+            if (routes.Count > 0)
+                return;
             routes.Clear();
             XmlDocument xmlDoc = new XmlDocument();
             string location = System.Reflection.Assembly.GetExecutingAssembly().Location;
@@ -49,7 +51,15 @@ namespace RouteUtil
                     }
                 }
             }
-
+            XmlDocument webDoc = new XmlDocument();
+            webDoc.Load("https://raw.githubusercontent.com/professoralex13/vatSys-SRC-Reader/main/Routes.xml");
+            if(webDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion") != null && xmlDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion") != null)
+            if(int.Parse(webDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion").Value) > int.Parse(xmlDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion").Value))
+            {
+                    xmlDoc.Load("https://raw.githubusercontent.com/professoralex13/vatSys-SRC-Reader/main/Routes.xml");
+                    WebClient client = new WebClient();
+                    client.DownloadFile("https://raw.githubusercontent.com/professoralex13/vatSys-SRC-Reader/main/Routes.xml", location);
+            }
             foreach (XmlNode x in xmlDoc.ChildNodes[0].ChildNodes)
             {
                 foreach (XmlNode i in x.ChildNodes)
