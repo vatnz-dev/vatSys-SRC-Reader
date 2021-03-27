@@ -61,6 +61,9 @@ namespace RouteUtil
         public static List<StandardRoute> routes = new List<StandardRoute>();
         public static void RouteDesignator_Change(TextBox routeDesignatorInput, Label routing, RichTextBox routeRemarks, TextBox fromInput, TextBox toInput)
         {
+            if(routeDesignatorInput.Text.Length > 0)
+                if (routeDesignatorInput.Text[0] == ' ')
+                    routeDesignatorInput.Text = routeDesignatorInput.Text.Remove(0, 1); 
             string selectedDesignator = routeDesignatorInput.Text;
             if (routes.Select(x => x.Designator).Contains(selectedDesignator))
             {
@@ -83,6 +86,9 @@ namespace RouteUtil
         }
         public static void Routing_Change(TextBox routingInput, Label routeDesignator, RichTextBox routeRemarks, TextBox fromInput, TextBox toInput)
         {
+            if (routingInput.Text.Length > 0)
+                if (routingInput.Text[0] == ' ')
+                routingInput.Text = routingInput.Text.Remove(0, 1);
             string selectedRouting = routingInput.Text;
             bool routeExists = false;
             StandardRoute foundRoute = new StandardRoute();
@@ -158,10 +164,11 @@ namespace RouteUtil
             await Task.Delay(1000);
             routeDesignator.Text = preText;
         }
-        public static async void routeRemarks_Click(RichTextBox routeRemarks)
+        public static async void routeRemarks_Click(RichTextBox routeRemarks, Form form)
         {
-            if (routeRemarks.Text == "Remarks: NONE")
+            if (routeRemarks.Text == "")
                 return;
+            form.ActiveControl = null;
             System.Windows.Forms.Clipboard.SetText(routeRemarks.Text.Substring(9, routeRemarks.Text.Length - 9));
             string preText = routeRemarks.Text;
             routeRemarks.Text = "COPIED";

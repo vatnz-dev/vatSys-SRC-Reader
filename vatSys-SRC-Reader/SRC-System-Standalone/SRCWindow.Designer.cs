@@ -81,6 +81,7 @@ namespace SRC_System_Standalone
             this.routeRemarks.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.routeRemarks.Location = new System.Drawing.Point(378, 142);
             this.routeRemarks.Name = "routeRemarks";
+            this.routeRemarks.ReadOnly = true;
             this.routeRemarks.Size = new System.Drawing.Size(275, 133);
             this.routeRemarks.TabIndex = 9;
             this.routeRemarks.Text = "";
