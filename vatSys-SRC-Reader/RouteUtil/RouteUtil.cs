@@ -51,14 +51,17 @@ namespace RouteUtil
                     }
                 }
             }
+
+            // Looks at VATNZ GitHub Repo to see if a new Routes.xml file is available.
+
             XmlDocument webDoc = new XmlDocument();
-            webDoc.Load("https://raw.githubusercontent.com/professoralex13/vatSys-SRC-Reader/main/Routes.xml");
+            webDoc.Load("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml");
             if(webDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion") != null && xmlDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion") != null)
             if(int.Parse(webDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion").Value) > int.Parse(xmlDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion").Value))
             {
-                    xmlDoc.Load("https://raw.githubusercontent.com/professoralex13/vatSys-SRC-Reader/main/Routes.xml");
+                    xmlDoc.Load("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml");
                     WebClient client = new WebClient();
-                    client.DownloadFile("https://raw.githubusercontent.com/professoralex13/vatSys-SRC-Reader/main/Routes.xml", location);
+                    client.DownloadFile("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml", location);
             }
             foreach (XmlNode x in xmlDoc.ChildNodes[0].ChildNodes)
             {
