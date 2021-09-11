@@ -235,7 +235,7 @@ namespace SRC_System
             this.MinimumSize = new System.Drawing.Size(670, 324);
             this.Name = "SRCWindow";
             this.Padding = new System.Windows.Forms.Padding(20);
-            this.Text = "Standard Route Tool";
+            this.Text = "Standard Route Tool ";
             this.Load += new System.EventHandler(this.SRCWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
