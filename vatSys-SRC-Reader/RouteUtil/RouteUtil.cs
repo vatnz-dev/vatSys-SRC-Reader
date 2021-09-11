@@ -176,7 +176,7 @@ namespace RouteUtil
             }
         }
 
-        public static async void routing_Click(Label routing)
+        public static async Task routing_Click(Label routing)
         {
             if (routing.Text == "Route: NONE")
                 return;
@@ -186,7 +186,7 @@ namespace RouteUtil
             await Task.Delay(1000);
             routing.Text = preText;
         }
-        public static async void routeDesignator_Click(Label routeDesignator)
+        public static async Task routeDesignator_Click(Label routeDesignator)
         {
             if (routeDesignator.Text == "Designator: NONE")
                 return;
@@ -196,7 +196,7 @@ namespace RouteUtil
             await Task.Delay(1000);
             routeDesignator.Text = preText;
         }
-        public static async void routeRemarks_Click(RichTextBox routeRemarks, Form form)
+        public static async Task routeRemarks_Click(RichTextBox routeRemarks, Form form)
         {
             if (routeRemarks.Text == "")
                 return;

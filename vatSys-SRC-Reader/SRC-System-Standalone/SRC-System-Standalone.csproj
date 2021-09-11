@@ -7,7 +7,7 @@
     <ProjectGuid>{362A5C14-250B-4EBE-957C-BD3270D03E02}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>SRC_System_Standalone</RootNamespace>
-    <AssemblyName>VATNZ Standard Route Clearance Tool</AssemblyName>
+    <AssemblyName>VATNZ Standard Route Tool</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
