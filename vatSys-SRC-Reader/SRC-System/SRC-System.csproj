@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\..\SRC Build\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -97,9 +97,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>del /f "C:\Users\alex\Documents\vatSys Files\Profiles\New Zealand\Plugins\$(TargetFileName)"
-xcopy "$(TargetPath)" "C:\Users\alex\Documents\vatSys Files\Profiles\New Zealand\Plugins"
-del /f "C:\Users\alex\Documents\vatSys Files\Profiles\New Zealand\Plugins\RouteUtil.dll"
-xcopy "$(TargetDir)\RouteUtil.dll" "C:\Users\alex\Documents\vatSys Files\Profiles\New Zealand\Plugins"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>

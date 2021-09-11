@@ -50,6 +50,7 @@ namespace SRC_System
             this.openFileDialog1.FileName = "openFileDialog1";
             this.openFileDialog1.Filter = "XML Files (*.xml)|*.xml|All files (*.*)|*.*";
             this.openFileDialog1.Title = "Standard Route Library Location";
+            this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // routeDesignatorInput
             // 

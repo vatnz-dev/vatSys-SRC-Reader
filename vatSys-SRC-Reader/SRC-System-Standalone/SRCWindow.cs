@@ -38,5 +38,10 @@ namespace SRC_System_Standalone
         {
             RouteUtil.RouteUtil.routeRemarks_Click(routeRemarks, this);
         }
+
+        private void SRCWindow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
