@@ -37,32 +37,28 @@ namespace RouteUtil
                     }
                     catch
                     {
-                        DialogResult result = openFileDialog1.ShowDialog();
-                        if (result == DialogResult.OK)
-                        {
-                            location = openFileDialog1.FileName;
-                            File.WriteAllText(Path.Combine(Environment.CurrentDirectory, "xmllocation"), location);
-                        }
-                        else if (result == DialogResult.Cancel)
-                        {
-                            form.Close();
-                            break;
-                        }
+                        xmlDoc.Load("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml");
+                        WebClient client = new WebClient();
+                        client.DownloadFile("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml", location);
+                        location = location.Substring(0, location.Length - System.Reflection.Assembly.GetExecutingAssembly().GetName().Name.Length - 4) + "/SRC-System/Routes.xml";
+
+                        break;
                     }
                 }
             }
-
             // Looks at VATNZ GitHub Repo to see if a new Routes.xml file is available.
 
             XmlDocument webDoc = new XmlDocument();
             webDoc.Load("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml");
-            if(webDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion") != null && xmlDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion") != null)
-            if(int.Parse(webDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion").Value) > int.Parse(xmlDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion").Value))
-            {
-                    xmlDoc.Load("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml");
-                    WebClient client = new WebClient();
-                    client.DownloadFile("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml", location);
-            }
+            if (webDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion") != null && xmlDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion") != null)
+                if (int.Parse(webDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion").Value) > int.Parse(xmlDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion").Value))
+                {
+                xmlDoc.Load("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml");
+                WebClient client = new WebClient();
+                client.DownloadFile("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml", location);
+                }
+                
+            
             foreach (XmlNode x in xmlDoc.ChildNodes[0].ChildNodes)
             {
                 foreach (XmlNode i in x.ChildNodes)
