@@ -98,6 +98,7 @@ namespace RouteUtil
         public static void Routing_Change(TextBox routingInput, Label routeDesignator, RichTextBox routeRemarks, TextBox fromInput, TextBox toInput)
         {
             routingInput.Text = routingInput.Text.Trim();
+            routingInput.Select(routingInput.Text.Length, 0);
             string selectedRouting = routingInput.Text;
             bool routeExists = false;
             StandardRoute foundRoute = new StandardRoute();
