@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Forms;
+using System.Drawing;
 using System.Xml;
 using System.Net;
 namespace RouteUtil
@@ -97,11 +98,25 @@ namespace RouteUtil
         }
         public static void Routing_Change(TextBox routingInput, Label routeDesignator, RichTextBox routeRemarks, TextBox fromInput, TextBox toInput)
         {
+            
+            int spaces = routingInput.SelectionStart; 
+
+            if (spaces == 0)
+            {
+                routingInput.SelectionStart = routingInput.Text.Length;
+            }
+
+            else
+
+            {
+                routingInput.SelectionStart = spaces;
+            }
+                
             routingInput.Text = routingInput.Text.Trim();
-            routingInput.Select(routingInput.Text.Length, 0);
             string selectedRouting = routingInput.Text;
             bool routeExists = false;
             StandardRoute foundRoute = new StandardRoute();
+
             foreach (var x in routes)
             {
                 if (x.Routing == selectedRouting)
@@ -125,7 +140,7 @@ namespace RouteUtil
                 toInput.Text = foundRoute.Designator.Substring(2, 2);
             }
             else
-            {
+            {            
                 routeDesignator.Text = "Designator: NONE";
                 routeRemarks.Text = "";
                 fromInput.Text = "";

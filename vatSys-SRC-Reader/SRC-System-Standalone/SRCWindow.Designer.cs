@@ -68,6 +68,7 @@ namespace SRC_System_Standalone
             this.routingInput.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.routingInput.Location = new System.Drawing.Point(378, 42);
             this.routingInput.Name = "routingInput";
+            this.routingInput.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.routingInput.Size = new System.Drawing.Size(275, 25);
             this.routingInput.TabIndex = 2;
             this.routingInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
