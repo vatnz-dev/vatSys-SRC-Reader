@@ -71,7 +71,7 @@ namespace RouteUtil
         public static List<StandardRoute> routes = new List<StandardRoute>();
         public static void RouteDesignator_Change(TextBox routeDesignatorInput, Label routing, RichTextBox routeRemarks, TextBox fromInput, TextBox toInput)
         {
-            //Remove Any Extra Whitespace at Start of Text Box   
+            //Remove Any Extra Whitespace at Start of Text Box, Also Removes ability to add spaces to Route Designator  
             routeDesignatorInput.Text = routeDesignatorInput.Text.Trim();
             string selectedDesignator = routeDesignatorInput.Text;
             if (routes.Select(x => x.Designator).Contains(selectedDesignator))
@@ -112,7 +112,8 @@ namespace RouteUtil
                 routingInput.SelectionStart = spaces;
             }
                 
-            routingInput.Text = routingInput.Text.Trim();
+            //routingInput.Text = routingInput.Text.Trim();
+            string selectedDesignator = routingInput.Text.Trim();
             string selectedRouting = routingInput.Text;
             bool routeExists = false;
             StandardRoute foundRoute = new StandardRoute();
