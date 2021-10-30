@@ -51,23 +51,19 @@ namespace RouteUtil
                             // Determine whether the directory exists.
                             if (Directory.Exists(SRCSystem))
                             {
-                                Console.WriteLine("That path exists already.");
-                                return;
+                                xmlDoc.Load("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml");
+                                WebClient client = new WebClient();
+                                client.DownloadFile("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml", Routes);
+                                Routes = SRCSystem + "/Routes.xml";
                             }
 
                             // Try to create the directory.
                             DirectoryInfo di = Directory.CreateDirectory(SRCSystem);
-                            Console.WriteLine("The directory was created successfully at {0}.", Directory.GetCreationTime(SRCSystem));
                         }
                         catch
                         {
 
                         }
-
-                        xmlDoc.Load("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml");
-                        WebClient client = new WebClient();
-                        client.DownloadFile("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml", Routes);
-                        Routes = SRCSystem + "/Routes.xml";
 
                         break;
                     }
