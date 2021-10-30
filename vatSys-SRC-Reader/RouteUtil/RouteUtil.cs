@@ -20,33 +20,60 @@ namespace RouteUtil
             routes.Clear();
             XmlDocument xmlDoc = new XmlDocument();
             string location = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            location = location.Substring(0, location.Length - System.Reflection.Assembly.GetExecutingAssembly().GetName().Name.Length - 4) + "/SRC-System/Routes.xml";
+            string absolutePath = location.Substring(0, location.Length - System.Reflection.Assembly.GetExecutingAssembly().GetName().Name.Length - 4);
+            string SRCSystem = absolutePath + "/SRC-System";
+            string Routes = SRCSystem + "/Routes.xml";
+
             while (true)
             {
                 try
                 {
-                    xmlDoc.Load(location);
+                    xmlDoc.Load(Routes);
                     break;
                 }
                 catch
                 {
                     try
                     {
-                        location = File.ReadAllText(Path.Combine(Environment.CurrentDirectory, "xmllocation"));
-                        xmlDoc.Load(location);
-                        break;
+                        //  string RoutesFileContent = File.ReadAllText(Path.Combine(Environment.CurrentDirectory, "xmllocation"));
+                        // xmlDoc.Load(RoutesFileContent);
+                        string RoutesFileContent = File.ReadAllText(Routes);
+                        xmlDoc.Load(RoutesFileContent);
+                        break; 
                     }
+
                     catch
+
                     {
+                        try
+
+                        {
+                            // Determine whether the directory exists.
+                            if (Directory.Exists(SRCSystem))
+                            {
+                                Console.WriteLine("That path exists already.");
+                                return;
+                            }
+
+                            // Try to create the directory.
+                            DirectoryInfo di = Directory.CreateDirectory(SRCSystem);
+                            Console.WriteLine("The directory was created successfully at {0}.", Directory.GetCreationTime(SRCSystem));
+                        }
+                        catch
+                        {
+
+                        }
+
                         xmlDoc.Load("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml");
                         WebClient client = new WebClient();
-                        client.DownloadFile("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml", location);
-                        location = location.Substring(0, location.Length - System.Reflection.Assembly.GetExecutingAssembly().GetName().Name.Length - 4) + "/SRC-System/Routes.xml";
+                        client.DownloadFile("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml", Routes);
+                        Routes = SRCSystem + "/Routes.xml";
 
                         break;
                     }
                 }
             }
+
             // Looks at VATNZ GitHub Repo to see if a new Routes.xml file is available.
 
             XmlDocument webDoc = new XmlDocument();
@@ -56,7 +83,7 @@ namespace RouteUtil
                 {
                 xmlDoc.Load("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml");
                 WebClient client = new WebClient();
-                client.DownloadFile("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml", location);
+                client.DownloadFile("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml", Routes);
                 }
                 
             
