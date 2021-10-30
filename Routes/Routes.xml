@@ -1,4 +1,4 @@
-<StandardRoutes CycleVersion="4">
+<StandardRoutes CycleVersion="6">
   <Airport Name="NZAA">
     <Route ID="AACH1" Remarks="FL240 and above">H384 NP H252 NS Y288</Route>
     <Route ID="AACH6" Remarks="">H384 NP Q137 VELGA Y894</Route>
