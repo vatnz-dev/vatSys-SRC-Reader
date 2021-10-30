@@ -23,14 +23,14 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>false</MapFileExtensions>
-    <InstallUrl>https://release.dirtyformal.dev/</InstallUrl>
+    <InstallUrl>https://release.dirtyformal.dev/VATNZ%2520Standard%2520Route%2520Tool/</InstallUrl>
     <SupportUrl>https://vatnz.net</SupportUrl>
     <ProductName>VATNZ Standard Route Tool</ProductName>
     <PublisherName>VATNZ</PublisherName>
     <SuiteName>VATNZ</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.html</WebPage>
-    <ApplicationRevision>9</ApplicationRevision>
+    <ApplicationRevision>10</ApplicationRevision>
     <ApplicationVersion>1.1.1.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
