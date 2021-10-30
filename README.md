@@ -1,37 +1,31 @@
-# VATNZ-SRC-Tool
-Based in C# The SRC Tool sources the Standard Route Clearances for all eligible aerodromes from the AIP and outputs them into an easy-to-read format, the user has the option to copy them to their clipboard for pasting in one click. Currently The SRC automatically updates the Standard Routes as they are changed by Airways, this is done through our GitHub.
+# VATNZ Standard Route Tool
 
-We plan To offer this as a standalone installer for Euroscope Users and pilots alongside a vatSys Plugin, built directly into vatSys.
+The Standard Route Tool allows for our Controllers and Pilots to search through and copy any Standard Routes that are present in the New Zealand AIP. 
+The Tool outputs them in an easy to read format, where the user then has the ability to copy them to their clipboard.
 
-Inside the Release you will find the Installer aswell as the Plugin for vatSys.
+This Tool is available as a discrete plugin for vatSys, in addition to being available as a standalone application, allowing for the use of the tool with EuroScope in addition to general piloting use. 
 
-# Features
-Currently The SRC Tool can:
+## Features
 
 - Allows the user to enter the Route Designator and produces the Route Waypoints & Remarks.
-
 - Allows the user to enter the Route Waypoints and produces the Route Designator & Remarks.
-
 - Allows the user to select the arrival and departure aerodromes and displays available routes & Remarks.
 
-The SRC Tool currently states if the route is:
+The Tool can also let you know if -
 
-- A Jet or Prop Routing                                                                     
-- Has Other remarks regarding weather or operational requirements
+- it is a jet or prop routing, or                                                               
+- has tther remarks regarding weather or operational requirements.
 
+## Contributing
 
-# Credits
+We welcome opportunities for improvement in both our code, and the features of the application. If you want to contribute, please reach out to the Operations Team through the VATNZ Discord.
 
-Special Thanks to Alex Cutforth, without you we could not have made this amazing Tool!
+## Credits
 
-Code - Mikey Robinson & Tom Kilpatrick.
+Special thanks to Alex Cutforth, who initiated the project and wrote the baseline code. Thank you!
 
-Application - Mikey Robinson.
+Code - Alex Cutforth, Mikey Robinson
 
 Documentation - Tom Kilpatrick
 
-Testing - VATNZ OPS Team, VATNZ ATC Training Department.
-
-
-
-
+Testing - Operations Team, Training Team, Closed Beta group.
