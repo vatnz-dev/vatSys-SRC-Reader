@@ -1,4 +1,4 @@
-<StandardRoutes CycleVersion="7">
+<StandardRoutes CycleVersion="8">
   <Airport Name="NZAA">
     <Route ID="AACH1" Remarks="FL240 and above">H384 NP H252 NS Y288</Route>
     <Route ID="AACH6" Remarks="">H384 NP Q137 VELGA Y894</Route>
@@ -48,8 +48,8 @@
     <Route ID="GSWN3" Remarks="For flights at 10,000ft or above, cross 25 GS at MNM 9000ft">H467 PM V242 DOGAD V112</Route>
   </Airport>
   <Airport Name="NZHN">
-    <Route ID="HNAR1" Remarks="">AA RWY 23L — Auckland SKEPY1A Arrival | AA RWY 05R Auckland SCARY1B Arrival</Route>
-    <Route ID="HNAA1" Remarks="">AA RWY 23L — Auckland SKEPY1A Arrival | AA RWY 05R Auckland SCARY1B Arrival</Route>
+    <Route ID="HNAR2" Remarks="">AA RWY 23L — Auckland SKEPY2A Arrival | AA RWY 05R Auckland SCARY2B Arrival</Route>
+    <Route ID="HNAA1" Remarks="">AA RWY 23L — Auckland SKEPY2A Arrival | AA RWY 05R Auckland SCARY2B Arrival</Route>
     <Route ID="HNCH3" Remarks="FL240 and above">H479 NP H252 NS Y288</Route>
     <Route ID="HNCH5" Remarks="MFA 10,000 ft">Q126 LIKTU Y526 ALADA Y894</Route>
     <Route ID="HNGS1" Remarks="">H328</Route>
@@ -183,8 +183,8 @@ on the western route">Y615 ELDAK Q196 CH Y175 OMKUN Y655 POKOM Q277</Route>
     <Route ID="WUWN3" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 WU">Q367 LEDOR Y762 TPAPA Y738</Route>
   </Airport>
   <Airport Name="NZWR">
-    <Route ID="WRAR1" Remarks="RNAV 1 GNSS Required">AA RWY 23L — Auckland APABO2A Arrival | AA RWY 05R --Auckland UKAPA2B Arrival</Route>
-    <Route ID="WRAA1" Remarks="RNAV 1 GNSS Required">AA RWY 23L — Auckland APABO2A Arrival | AA RWY 05R — Auckland UKAPA2B Arrival</Route>
+    <Route ID="WRAR2" Remarks="RNAV 1 GNSS Required">AA RWY 23L — Auckland APABO3A Arrival | AA RWY 05R --Auckland UKAPA3B Arrival</Route>
+    <Route ID="WRAA2" Remarks="RNAV 1 GNSS Required">AA RWY 23L — Auckland APABO3A Arrival | AA RWY 05R — Auckland UKAPA3B Arrival</Route>
     <Route ID="WRWN3" Remarks="Reach cleared level by 10 NM prior to SILVO">SF H379 AA H384 KARRL Y506 TPAPA Y738</Route>
   </Airport>
   <Airport Name="NZWP">
@@ -238,10 +238,10 @@ on the western route">Y615 ELDAK Q196 CH Y175 OMKUN Y655 POKOM Q277</Route>
     <Route ID="MCCH3" Remarks="">MAMUS Y735 DOPKI Y153</Route>
   </Airport>
   <Airport Name="NZKK">
-    <Route ID="KKAA3" Remarks="RNAV 1 GNSS Required">AA RWY 23L — Auckland APABO2A Arrival | AA RWY 05R — Auckland UKAPA2B Arrival</Route>
+    <Route ID="KKAA1" Remarks="RNAV 1 GNSS Required">AA RWY 23L — Auckland APABO3A Arrival | AA RWY 05R — Auckland UKAPA3B Arrival</Route>
   </Airport>
   <Airport Name="NZKT">
-    <Route ID="KTAA1" Remarks="RNAV 1 GNSS Required">AA RWY 23L — G591 PERAS then Auckland APABO2A Arrival | AA RWY 05R — G591 PERAS then Auckland UKAPA2B Arrival</Route>
+    <Route ID="KTAA2" Remarks="RNAV 1 GNSS Required">AA RWY 23L — G591 PERAS then Auckland APABO3A Arrival | AA RWY 05R — G591 PERAS then Auckland UKAPA3B Arrival</Route>
   </Airport>
   <Airport Name="NZCH">
     <Route ID="CHAA1" Remarks="Jets Only">Y175 OMKUN Y655 POKOM Q277</Route>
