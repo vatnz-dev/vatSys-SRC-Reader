@@ -1,4 +1,4 @@
-<StandardRoutes CycleVersion="9">
+<StandardRoutes CycleVersion="10">
   <Airport Name="NZAA">
     <Route ID="AACH1" Remarks="FL240 and above">H384 NP H252 NS Y288</Route>
     <Route ID="AACH6" Remarks="">H384 NP Q137 VELGA Y894</Route>
@@ -34,7 +34,7 @@
     <Route ID="DNAA4" Remarks="Non Jets; RNP 1 Required;For flights at FL260 or above,maintain FL250 to LADIS">BIDEL Y477 CH H110 PORAM Y781 RIVTA Y523 GULOV Y175 OMKUN Y311 DADUK Y273 PEPPE H182</Route>
     <Route ID="DNCH2" Remarks="RNP 1 Required; For flights at FL260 or above, maintain FL250 to LADIS">BIDEL Y477</Route>
     <Route ID="DNNV2" Remarks="RNP 1 Required; MFA 4000 ft">AKPIN</Route>
-    <Route ID="DNNV4" Remarks="">HL H264</Route>
+    <Route ID="DNNV5" Remarks="">BE H264</Route>
     <Route ID="DNWN3" Remarks="Jets Only; RNP 1 Required; FL260 and above: maintain FL250 to LADIS">BIDEL Y477 LADIS Y727 WARDS Y393</Route>
     <Route ID="DNWN5" Remarks="Non Jets; RNP 1 Required; For flights at FL260 or above, maintain FL250 to LADIS">BIDEL Y477 CH Y393</Route>
   </Airport>
@@ -147,7 +147,7 @@ on the western route">Y615 ELDAK Q196 CH Y175 OMKUN Y655 POKOM Q277</Route>
     <Route ID="ROWN5" Remarks="Available for use also when hazardous flight conditions exist north-east of Wellington.">H247 WU Q367 LEDOR Y762 TPAPA Y738</Route>
   </Airport>
   <Airport Name="NZAR">
-    <Route ID="ARWR3" Remarks="">WI Q277 AA H379 SF</Route>
+    <Route ID="ARWR1" Remarks="">SATLA Q741 HOOKS Q789 UPLIN Q665 KAWAU Q520 SF</Route>
   </Airport>
   <Airport Name="NZAP">
     <Route ID="APAA3" Remarks="">Y897 LEGER H182</Route>
@@ -172,7 +172,7 @@ on the western route">Y615 ELDAK Q196 CH Y175 OMKUN Y655 POKOM Q277</Route>
     <Route ID="WSWN2" Remarks="Non-RNAV aircraft expect radar vectors after SIMZI">H267</Route>
   </Airport>
   <Airport Name="NZWF">
-    <Route ID="WFCH1" Remarks="">NZWF TIMJO Y153 CH</Route>
+    <Route ID="WFCH2" Remarks="">TIMJO Y153 CH</Route>
   </Airport>
   <Airport Name="NZWU">
     <Route ID="WUAA1" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 WU">Q647 DAGOM Y273 PEPPE H182</Route>
@@ -211,14 +211,14 @@ on the western route">Y615 ELDAK Q196 CH Y175 OMKUN Y655 POKOM Q277</Route>
   </Airport>
   <Airport Name="NZNP">
     <Route ID="NPAA3" Remarks="For flights at 10,000 ft or above, maintain 9000 ft to DADUK">H479 DADUK Y273 PEPPE H182</Route>
-    <Route ID="NPCH3" Remarks="">NP RWY 05 — Y738 DAPNO Q335 PEDPO Y894 NP RWY 23 — Q137 VELGA Y894</Route>
+    <Route ID="NPCH1" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to PEDBO">NP RWY 05 — Y738 DAPNO Q335 PEDPO Y894 | NP RWY 23 — Q137 VELGA Y894</Route>
     <Route ID="NPHN2" Remarks="">H479</Route>
     <Route ID="NPPM3" Remarks="">H205 RUGVI H336</Route>
     <Route ID="NPPM4" Remarks="">H499 MEVAX Q202 VIROL</Route>
     <Route ID="NPPM7" Remarks="For use when G351 is active">VELGA Q518 MEVAX Q202 VIROL</Route>
     <Route ID="NPWU1" Remarks="">H499 MEVAX H486</Route>
-    <Route ID="NPWN3" Remarks="">Y738</Route>
-    <Route ID="NPWN4" Remarks="For use when G351 is active">VELGA Q518 PADMU Y738</Route>
+    <Route ID="NPWN1" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to PADMU">Y738</Route>
+    <Route ID="NPWN5" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to PADMU">VELGA Q518 PADMU Y738</Route>
     <Route ID="NPWU4" Remarks="For use when G351 is active">VELGA Q518 MEVAX H486</Route>
   </Airport>
   <Airport Name="NZNR">
@@ -268,7 +268,7 @@ on the western route">Y615 ELDAK Q196 CH Y175 OMKUN Y655 POKOM Q277</Route>
     <Route ID="CHTG1" Remarks="Jets Only;FL250 and above">Y393 OMDOX Y465 KAMET H467 FOXTN H313 OH H182 ARETI Y539 PARRA Y505</Route>
     <Route ID="CHTG6" Remarks="Non Jets">Y819 AGSOP Y737 GOPRO H482 KAPTI Y273 DAGOM Y715 ARETI Y539 PARRA Y505</Route>
     <Route ID="CHTU3" Remarks="">Q196</Route>
-    <Route ID="CHWF1" Remarks="">CH Y266 ELRUV NZWF</Route>
+    <Route ID="CHWF2" Remarks="">CH Y266 ELRUV</Route>
     <Route ID="CHWN1" Remarks="">Y393</Route>
     <Route ID="CHWN9" Remarks="10,000 ft or below">H424 GOOSE V306 ONOLA Q421 OMDOX Y393</Route>
     <Route ID="CHWP1" Remarks="Jets Only">Y175 OMKUN Y655 POKOM Q277 AA H182</Route>
