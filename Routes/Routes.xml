@@ -4,7 +4,7 @@
     <Route ID="AACH6" Remarks="">H384 NP Q137 VELGA Y894</Route>
     <Route ID="AADN3" Remarks="">Y320 LAKAR Y874 MIPAK</Route>
     <Route ID="AAGS3" Remarks="">H372 TULMI Y548 DABIP H328</Route>
-    <Route ID="AAGS4" Remarks="">H372 RO H328</Route> 
+    <Route ID="AAGS4" Remarks="">H372 RO H328</Route>
     <Route ID="AAGB2" Remarks="">Q136</Route>
     <Route ID="AAHN1" Remarks="">H211</Route>
     <Route ID="AAKT1" Remarks="">AA RWY 23L — G591 | AA RWY 05R — Q520 APABO Q659 PERAS G591</Route>
@@ -255,7 +255,7 @@ on the western route">Y615 ELDAK Q196 CH Y175 OMKUN Y655 POKOM Q277</Route>
     <Route ID="CHMC1" Remarks="">Y266 SUNAR Q360 MAMUS</Route>
     <Route ID="CHNR1" Remarks="Jets Only">Y393 OMDOX Y465 KAMET H467 BINIT Y737 PM H201 RIDLA H103</Route>
     <Route ID="CHNR6" Remarks="Non Jets">Y819 AGSOP Y737 PM H201 RIDLA H103</Route>
-    <Route ID="CHNS1" Remarks="">H110 PORAM Y781 BISEB H110</Route>
+    <Route ID="CHNS2" Remarks="">NS RWY 02 - H110 PORAM Y781 BISEB | NS RWY 20 - H110 PORAM Y781 BISEB H110 GUNEL</Route>
     <Route ID="CHNP1" Remarks="">H110 PORAM Y781 RIVTA Y523 GULOV Y175 OMKUN H499</Route>
     <Route ID="CHOH3" Remarks="Jets Only">Y393 OMDOX Y465 KAMET H467 BINIT</Route>
     <Route ID="CHOH5" Remarks="Non Jets">Y819 AGSOP Y737 BINIT</Route>
@@ -309,5 +309,8 @@ on the western route">Y615 ELDAK Q196 CH Y175 OMKUN Y655 POKOM Q277</Route>
     <Route ID="WNWP6" Remarks="Non Jets">Y127 OPABI Q126 LIKTU Y273 PEPPE H182</Route>
     <Route ID="WNWP9" Remarks="Jets Only">KAMET H467 FOXTN H313 OH H182 ARETI Y539 PARRA Y505 TG H117 NOBAR Q132 MERAS Q119 AA H182</Route>
     <Route ID="WNWB3" Remarks="">RWY 34 — AVPOD | RWY 16 — Q100</Route>
+  </Airport>
+  <Airport Name="NZWO">
+    <Route ID="WOGS1" Remarks="">H467</Route>
   </Airport>
 </StandardRoutes>
