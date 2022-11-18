@@ -47,6 +47,9 @@
     <Route ID="GSWO2" Remarks="">H467</Route>
     <Route ID="GSWN3" Remarks="For flights at 10,000ft or above, cross 25 GS at MNM 9000ft">H467 PM V242 DOGAD V112</Route>
   </Airport>
+  <Airport Name="NZGB">
+    <Route ID="GBAA2" Remarks="">Q136</Route>
+  </Airport>
   <Airport Name="NZHN">
     <Route ID="HNAR3" Remarks="">AA RWY 23L — Auckland SKEPY2A Arrival | AA RWY 05R Auckland SCARY3B Arrival</Route>
     <Route ID="HNAA3" Remarks="">AA RWY 23L — Auckland SKEPY2A Arrival | AA RWY 05R Auckland SCARY3B Arrival</Route>
