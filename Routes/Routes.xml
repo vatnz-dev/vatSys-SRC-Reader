@@ -16,7 +16,7 @@
     <Route ID="AANV1" Remarks="Jets Only">Y320 QN Q787</Route>
     <Route ID="AANV5" Remarks="Jets Only">Y320 LAKAR Y628 UPNIX Y496 DUKOP Y676 NV</Route>
     <Route ID="AAPM2" Remarks="12,000 ft and above">H211 LAKES Y666</Route>
-    <Route ID="AAPM4" Remarks="10,000 ft and below">H211 HN H325 TM H182 RUGVI H336</Route>
+    <Route ID="AAPM5" Remarks="10,000 ft and below">H211 HN H325 TM H182 AVKAB H336</Route>
     <Route ID="AAPP3" Remarks="">H384 KARRL Y506 TPAPA Y610</Route>
     <Route ID="AAQN2" Remarks="">Y320</Route>
     <Route ID="AAQN4" Remarks="">Y320 LAKAR Y628 UPNIX Y266</Route>
@@ -60,7 +60,7 @@
     <Route ID="HNNS3" Remarks="">H479 NP H252</Route>
     <Route ID="HNNP2" Remarks="">H479</Route>
     <Route ID="HNPM1" Remarks="12,000 ft and above">H325 DROPT Y666</Route>
-    <Route ID="HNPM4" Remarks="10,000 ft and below">H325 TM H182 RUGVI H336</Route>
+    <Route ID="HNPM5" Remarks="10,000 ft and below">H325 TM H182 AVKAB H336</Route>
     <Route ID="HNRO2" Remarks="">H328</Route>
     <Route ID="HNTG1" Remarks="">H105</Route>
     <Route ID="HNTG4" Remarks="">H114</Route>
@@ -103,16 +103,16 @@
   </Airport>
   <Airport Name="NZPM">
     <Route ID="PMAA2" Remarks="">OMBUB Y273 PEPPE H182</Route>
-    <Route ID="PMAA5" Remarks="">H336 RUGVI H182</Route>
+    <Route ID="PMAA6" Remarks="">H336 AVKAB H182</Route>
     <Route ID="PMCH2" Remarks="">Y226 GURBO Q800 ATBUB H159</Route>
     <Route ID="PMCH4" Remarks="Available for use also when hazardous flight conditions exist north-east of Wellington">H240 NS Y288</Route>
     <Route ID="PMHN3" Remarks="">OMBUB Y273 LIKTU Q126</Route>
     <Route ID="PMNR3" Remarks="">H240 IRMIX Q800 RIDLA H103</Route>
     <Route ID="PMNS3" Remarks="">H240</Route>
-    <Route ID="PMNP1" Remarks="">H336 RUGVI H205</Route>
+    <Route ID="PMNP2" Remarks="">H336 AVKAB H205</Route>
     <Route ID="PMNP5" Remarks="">VIROL Q202 MEVAX H499</Route>
     <Route ID="PMPP2" Remarks="">H467</Route>
-    <Route ID="PMWU3" Remarks="">H336 RUGVI H486</Route>
+    <Route ID="PMWU1" Remarks="">H336 AVKAB H486</Route>
     <Route ID="PMWN1" Remarks="">V242 DOGAD V112</Route>
     <Route ID="PMWN4" Remarks="Available for use also when hazardous flight conditions exist north-east of Wellington">H201 KAPTI Q169 AVKEX Q235</Route>
     <Route ID="PMWB3" Remarks="">H201 KAPTI Q169 AVKEX Q472</Route>
@@ -179,7 +179,7 @@
   <Airport Name="NZWU">
     <Route ID="WUAA1" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 WU">Q647 DAGOM Y273 PEPPE H182</Route>
     <Route ID="WUHN3" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 WU">Q647 DAGOM Y273 LIKTU Q126</Route>
-    <Route ID="WUPM2" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 WU">H486 RUGVI H336</Route>
+    <Route ID="WUPM3" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 WU">H486 AVKAB H336</Route>
     <Route ID="WUNS1" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 WU">Q367 DUMOT H240</Route>
     <Route ID="WUNP1" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to MEVAX">H486 MEVAX H499</Route>
     <Route ID="WUWN3" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 WU">Q367 LEDOR Y762 TPAPA Y738</Route>
@@ -215,7 +215,7 @@
     <Route ID="NPAA3" Remarks="">H479 DADUK Y273 PEPPE H182</Route>
     <Route ID="NPCH1" Remarks="">NP RWY 05 — Y738 DAPNO Q335 PEDPO Y894 | NP RWY 23 — Q137 VELGA Y894</Route>
     <Route ID="NPHN2" Remarks="">H479</Route>
-    <Route ID="NPPM3" Remarks="">H205 RUGVI H336</Route>
+    <Route ID="NPPM1" Remarks="">H205 AVKAB H336</Route>
     <Route ID="NPPM4" Remarks="">H499 MEVAX Q202 VIROL</Route>
     <Route ID="NPPM7" Remarks="For use when G351 is active">VELGA Q518 MEVAX Q202 VIROL</Route>
     <Route ID="NPWU1" Remarks="">H499 MEVAX H486</Route>
