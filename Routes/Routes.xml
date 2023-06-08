@@ -284,8 +284,8 @@
     <Route ID="WNCI2" Remarks="">Q611</Route>
     <Route ID="WNCH3" Remarks="Jets Only">V306 SABDA Y622 MESIX H159</Route>
     <Route ID="WNCH4" Remarks="Non-Jets">Y502 VENAM Q800 ATBUB H159</Route>
-    <Route ID="WNDN1" Remarks="Non-Jets">V306 SABDA Y622 MESIX Y676 IDARA Y814 MIPAK</Route>
-    <Route ID="WNDN7" Remarks="Jets Only">Y502 VENAM Q800 ATBUB H159 CH Y714 IDARA Y814 MIPAK Q852 SW</Route>
+    <Route ID="WNDN1" Remarks="Jets Only">V306 SABDA Y622 MESIX Y676 IDARA Y814 MIPAK</Route>
+    <Route ID="WNDN7" Remarks="Non-Jets">Y502 VENAM Q800 ATBUB H159 CH Y714 IDARA Y814 MIPAK Q852 SW</Route>
     <Route ID="WNGS3" Remarks="">KAMET H467 BINIT Y737 PM H467</Route>
     <Route ID="WNHN2" Remarks="">KAPTI Y273 LIKTU Q126</Route>
     <Route ID="WNHN7" Remarks="">KAPTI Y273 DAGOM Y715 ARETI Y539 RO H234 FALLS H114 GODOK</Route>
