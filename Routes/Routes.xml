@@ -1,4 +1,4 @@
-<StandardRoutes CycleVersion="14">
+<StandardRoutes CycleVersion="15">
   <Airport Name="NZAA">
     <Route ID="AACH1" Remarks="Jets Only; FL240 and above">H384 NP H252 NS Y288</Route>
     <Route ID="AACH6" Remarks="Props Only">H384 NP Q137 VELGA Y894</Route>
@@ -42,10 +42,10 @@
     <Route ID="GSAA3" Remarks="">H117 NOBAR Q132 MERAS Q119</Route>
     <Route ID="GSHN3" Remarks="">H328 RO H234 FALLS H114</Route>
     <Route ID="GSHN4" Remarks="">H328</Route>
-    <Route ID="GSNR3" Remarks="For flights at 10,000ft or above, cross 25 GS at MNM 9000ft">H467</Route>
+    <Route ID="GSNR1" Remarks="">H245</Route>
     <Route ID="GSNR4" Remarks="">H386</Route>
-    <Route ID="GSWO2" Remarks="">H467</Route>
-    <Route ID="GSWN3" Remarks="For flights at 10,000ft or above, cross 25 GS at MNM 9000ft">H467 PM V242 DOGAD V112</Route>
+    <Route ID="GSWO3" Remarks="">H245</Route>
+    <Route ID="GSWN3" Remarks="">H245 NR H103 RIDLA H201 PM V242 DOGAD V112</Route>
   </Airport>
   <Airport Name="NZGB">
     <Route ID="GBAA2" Remarks="">Q136</Route>
@@ -94,7 +94,7 @@
   <Airport Name="NZOH">
     <Route ID="OHAA1" Remarks="Jets Only">H352 WU Q647 DAGOM Y273 OMBUB Q102 OPABI Q277</Route>
     <Route ID="OHAA4" Remarks="Non Jets">H352 WU Q647 DAGOM Y273 PEPPE H182</Route>
-    <Route ID="OHCH1" Remarks="">V468 ABTOL Y226 GURBO Q800 ATBUB H159</Route>
+    <Route ID="OHCH2" Remarks="">V468 ABTOL Y226 GURBO Y804 ATBUB H159</Route>
     <Route ID="OHWN2" Remarks="">V112</Route>
     <Route ID="OHWN5" Remarks="Available for use also when hazardous flight conditions exist north-east of Wellington">Q169 AVKEX Q235</Route>
     <Route ID="OHWP1" Remarks="Jets Only">H352 WU Q647 DAGOM Y273 OMBUB Q102 OPABI Q277 AA H182</Route>
@@ -104,10 +104,10 @@
   <Airport Name="NZPM">
     <Route ID="PMAA2" Remarks="">OMBUB Y273 PEPPE H182</Route>
     <Route ID="PMAA6" Remarks="">H336 AVKAB H182</Route>
-    <Route ID="PMCH2" Remarks="">Y226 GURBO Q800 ATBUB H159</Route>
+    <Route ID="PMCH3" Remarks="">Y226 GURBO Y804 ATBUB H159</Route>
     <Route ID="PMCH4" Remarks="Available for use also when hazardous flight conditions exist north-east of Wellington">H240 NS Y288</Route>
     <Route ID="PMHN3" Remarks="">OMBUB Y273 LIKTU Q126</Route>
-    <Route ID="PMNR3" Remarks="">H240 IRMIX Q800 RIDLA H103</Route>
+    <Route ID="PMNR1" Remarks="">H364 APITI H297</Route>
     <Route ID="PMNS3" Remarks="">H240</Route>
     <Route ID="PMNP2" Remarks="">H336 AVKAB H205</Route>
     <Route ID="PMNP5" Remarks="">VIROL Q202 MEVAX H499</Route>
@@ -138,9 +138,9 @@
     <Route ID="QNWN7" Remarks="ACFT must accept a clearance and fly a published SID via ADLUP">ADLUP Y615 ELDAK Q196 CH Y393 WN</Route>
   </Airport>
   <Airport Name="NZRO">
-    <Route ID="ROAA1" Remarks="11,000 ft and above">Y871 NOBAR Q132 MERAS Q119</Route>
+    <Route ID="ROAA1" Remarks="">Y871 NOBAR Q132 MERAS Q119</Route>
     <Route ID="ROAA6" Remarks="9,000 ft and below">Q119</Route>
-    <Route ID="ROCH3" Remarks="11,000 ft and above">Y640 CHUTE Y780 ABTOL Y226 GURBO Q800 ATBUB H159</Route>
+    <Route ID="ROCH1" Remarks="">Y640 CHUTE Y780 ABTOL Y226 GURBO Y804 ATBUB H159</Route>
     <Route ID="ROCH4" Remarks="">H247 TM Q438 NS Q787 ALADA Y894</Route>
     <Route ID="ROGS3" Remarks="">H328</Route>
     <Route ID="ROHN3" Remarks="">H234 FALLS H114</Route>
@@ -159,7 +159,7 @@
   </Airport>
   <Airport Name="NZTG">
     <Route ID="TGAA3" Remarks="">H117 NOBAR Q132 MERAS Q119</Route>
-    <Route ID="TGCH2" Remarks="">H310 RO Y640 CHUTE Y780 ABTOL Y226 GURBO Q800 ATBUB H159</Route>
+    <Route ID="TGCH3" Remarks="">H310 RO Y640 CHUTE Y780 ABTOL Y226 GURBO Y804 ATBUB H159</Route>
     <Route ID="TGGS3" Remarks="">H117</Route>
     <Route ID="TGHN3" Remarks="">H114</Route>
     <Route ID="TGRO2" Remarks="">H310</Route>
@@ -199,7 +199,6 @@
   <Airport Name="NZWB">
     <Route ID="WBAA1" Remarks="">Q472 IPMIR Q566 AKAVI Y175 OMKUN Y311 DADUK Y273 PEPPE H182</Route>
     <Route ID="WBCH3" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to ONOLA">H157 WAIMA Q421 ONOLA V306 ATBUB H159</Route>
-    <Route ID="WBNR2" Remarks="">Q472 AVKEX Q169 KAPTI Q555 BINIT Y737 PM H201 RIDLA H103</Route>
     <Route ID="WBNS1" Remarks="">H133</Route>
     <Route ID="WBOH3" Remarks="">Q472 AVKEX Q169 KAPTI Q555 BINIT H467 FOXTN H313</Route>
     <Route ID="WBPM2" Remarks="">Q472 AVKEX Q169 KAPTI H201</Route>
@@ -225,16 +224,14 @@
   </Airport>
   <Airport Name="NZNR">
     <Route ID="NRAA2" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 NR">H372 MOOSE Y601 NOBAR Q132 MERAS Q119</Route>
-    <Route ID="NRCH2" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 NR">H429 PM Y226 GURBO Q800 ATBUB H159</Route>
-    <Route ID="NRGS2" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 NR">H467</Route>
+    <Route ID="NRCH3" Remarks="">H103 RIDLA Y820 ABTOL Y226 GURBO Y804 ATBUB H159</Route>
+    <Route ID="NRGS3" Remarks="">H245</Route>
     <Route ID="NRGS5" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 NR">H386</Route>
     <Route ID="NRHN1" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 NR">H372 RO H234 FALLS H114</Route>
-    <Route ID="NRPM2" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 NR">H429 SELDU H297 APITI H364</Route>
+    <Route ID="NRPM3" Remarks="">H103 RIDLA Q800 IRMIX H240 PM</Route>
     <Route ID="NRPM4" Remarks="9000 ft or below">H240</Route>
-    <Route ID="NRWO3" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 NR">H467</Route>
-    <Route ID="NRWN3" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 NR">H429 PM V242 DOGAD V112</Route>
-    <Route ID="NRWN4" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 NR; Available for use only when hazardous flight conditions exist north-east of Wellington.">H429 PM H201 KAPTI Q169 AVKEX Q235</Route>
-    <Route ID="NRWB3" Remarks="For flights at 11,000 ft or above, maintain 10,000 ft to 30 NR">H429 PM V242 DOGAD V112 WN Q100</Route>
+    <Route ID="NRWO1" Remarks="">H245</Route>
+    <Route ID="NRWN1" Remarks="">H103 RIDLA H201 PM V242 DOGAD V112</Route>
   </Airport>
   <Airport Name="NZMC">
     <Route ID="MCCH3" Remarks="">MAMUS Y735 DOPKI Y153</Route>
@@ -255,8 +252,8 @@
     <Route ID="CHHK3" Remarks="">Q309</Route>
     <Route ID="CHNV3" Remarks="">Y714 IDARA Y676</Route>
     <Route ID="CHMC1" Remarks="">Y266 SUNAR Q360 MAMUS</Route>
-    <Route ID="CHNR1" Remarks="Jets Only">Y393 OMDOX Y465 KAMET H467 BINIT Y737 PM H201 RIDLA H103</Route>
-    <Route ID="CHNR6" Remarks="Non Jets">Y819 AGSOP Y737 PM H201 RIDLA H103</Route>
+    <Route ID="CHNR2" Remarks="Jets Only">Y393 OMDOX Y465 KAMET H467 BINIT Y737 PM H429 SELDU H297</Route>
+    <Route ID="CHNR4" Remarks="Non Jets">Y819 AGSOP Y737 PM H429 SELDU H297</Route>
     <Route ID="CHNS2" Remarks="">NS RWY 02 - H110 PORAM Y781 BISEB | NS RWY 20 - H110 PORAM Y781 BISEB H110 GUNEL</Route>
     <Route ID="CHNP1" Remarks="">H110 PORAM Y781 RIVTA Y523 GULOV Y175 OMKUN H499</Route>
     <Route ID="CHOH3" Remarks="Jets Only">Y393 OMDOX Y465 KAMET H467 BINIT</Route>
@@ -280,30 +277,30 @@
   <Airport Name="NZWN">
     <Route ID="WNAA2" Remarks="Jets Only">Y127 OPABI Q277</Route>
     <Route ID="WNAA5" Remarks="Non Jets">Y631 MEVAX Q412 OPABI Q126 LIKTU Y273 PEPPE H182</Route>
-    <Route ID="WNAA7" Remarks="">KAMET H467 FOXTN H313 OH H182 ARETI Y539 PARRA Y505 TG H117 NOBAR</Route>
+    <Route ID="WNAA7" Remarks="Jets Only">KAMET H467 FOXTN H313 OH H182 ARETI Y539 PARRA Y505 TG H117 NOBAR</Route>
     <Route ID="WNCI2" Remarks="">Q611</Route>
     <Route ID="WNCH3" Remarks="Jets Only">V306 SABDA Y622 MESIX H159</Route>
-    <Route ID="WNCH4" Remarks="Non-Jets">Y502 VENAM Q800 ATBUB H159</Route>
+    <Route ID="WNCH5" Remarks="Non-Jets">Y502 VENAM Y804 ATBUB H159</Route>
     <Route ID="WNDN1" Remarks="Jets Only">V306 SABDA Y622 MESIX Y676 IDARA Y814 MIPAK</Route>
-    <Route ID="WNDN7" Remarks="Non-Jets">Y502 VENAM Q800 ATBUB H159 CH Y714 IDARA Y814 MIPAK Q852 SW</Route>
-    <Route ID="WNGS3" Remarks="">KAMET H467 BINIT Y737 PM H467</Route>
+    <Route ID="WNDN8" Remarks="Non-Jets">Y502 VENAM Y804 ATBUB H159 CH Y714 IDARA Y814 MIPAK Q852 SW</Route>
+    <Route ID="WNGS1" Remarks="">KAMET H467 BINIT Y737 PM H429 SELDU H297 NR H245</Route>
     <Route ID="WNHN2" Remarks="">KAPTI Y273 LIKTU Q126</Route>
     <Route ID="WNHN7" Remarks="">KAPTI Y273 DAGOM Y715 ARETI Y539 RO H234 FALLS H114 GODOK</Route>
     <Route ID="WNHS2" Remarks="">KAMET H467 BINIT Y737 PM H201 OPAPA</Route>
     <Route ID="WNNV2" Remarks="Jets Only">V306 SABDA Y622 MESIX Y676</Route>
-    <Route ID="WNNV4" Remarks="Non-Jets">Y502 VENAM Q800 ATBUB H159 MESIX Y676</Route>
-    <Route ID="WNNR1" Remarks="">KAMET H467 BINIT Y737 PM H201 RIDLA H103</Route>
+    <Route ID="WNNV5" Remarks="Non-Jets">Y502 VENAM Y804 ATBUB H159 MESIX Y676</Route>
+    <Route ID="WNNR2" Remarks="">KAMET H467 BINIT Y737 PM H429 SELDU H297</Route>
     <Route ID="WNNS1" Remarks="">RWY 34 — NULKO Q235 | RWY 16 — LUBSI H133</Route>
     <Route ID="WNNP1" Remarks="">Y631 MEVAX H499</Route>
     <Route ID="WNOH2" Remarks="">KAMET H467 BINIT</Route>
     <Route ID="WNPM1" Remarks="">KAMET H467 BINIT Y737</Route>
     <Route ID="WNPN3" Remarks="">RWY 34 — AVPOD | RWY 16 — Q100</Route>
     <Route ID="WNQN3" Remarks="Jets only">V306 SABDA Y622 MESIX H159 CH Y266</Route>
-    <Route ID="WNQN4" Remarks="Non Jets">Y502 VENAM Q800 ATBUB H159 CH Y266</Route>
+    <Route ID="WNQN5" Remarks="Non Jets">Y502 VENAM Y804 ATBUB H159 CH Y266</Route>
     <Route ID="WNRO1" Remarks="">KAPTI Y273 DAGOM Y715 ARETI Y539</Route>
     <Route ID="WNAP3" Remarks="">KAPTI Y273 DAGOM Y715 ARETI H116</Route>
     <Route ID="WNTG1" Remarks="">KAPTI Y273 DAGOM Y715 ARETI Y539 PARRA Y505</Route>
-    <Route ID="WNTU2" Remarks="">Y502 VENAM Q800 ATBUB H159 CH Q196</Route>
+    <Route ID="WNTU3" Remarks="">Y502 VENAM Y804 ATBUB H159 CH Q196</Route>
     <Route ID="WNWU3" Remarks="">KAPTI H482</Route>
     <Route ID="WNWS1" Remarks="">RWY 34 — NULKO Q235 BOLOX H463 NS H267 | RWY 16 — LUBSI H133 NS H267</Route>
     <Route ID="WNWK3" Remarks="">KAPTI Y273 DAGOM Y715 ARETI Y539 RO H480</Route>
@@ -314,6 +311,6 @@
     <Route ID="WNWB3" Remarks="">RWY 34 — AVPOD | RWY 16 — Q100</Route>
   </Airport>
   <Airport Name="NZWO">
-    <Route ID="WOGS1" Remarks="">H467</Route>
+    <Route ID="WOGS2" Remarks="">H245</Route>
   </Airport>
 </StandardRoutes>
