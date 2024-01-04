@@ -17,76 +17,51 @@ namespace RouteUtil
         {
             if (routes.Count > 0)
                 return;
+
             routes.Clear();
-            XmlDocument xmlDoc = new XmlDocument();
-            string location = System.Reflection.Assembly.GetExecutingAssembly().Location;
-            string absolutePath = location.Substring(0, location.Length - System.Reflection.Assembly.GetExecutingAssembly().GetName().Name.Length - 4);
-            string SRCSystem = absolutePath + "/SRC-System";
-            string Routes = SRCSystem + "/Routes.xml";
 
-            while (true)
-            {
-                try
-                {
-                    xmlDoc.Load(Routes);
-                    break;
-                }
-                catch
-                {
-                    try
-                    {
-                        //  string RoutesFileContent = File.ReadAllText(Path.Combine(Environment.CurrentDirectory, "xmllocation"));
-                        // xmlDoc.Load(RoutesFileContent);
-                        string RoutesFileContent = File.ReadAllText(Routes);
-                        xmlDoc.Load(RoutesFileContent);
-                        break; 
-                    }
+            string LocalExecutablePath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+            string LocalDir = LocalExecutablePath.Substring(0, LocalExecutablePath.Length - System.Reflection.Assembly.GetExecutingAssembly().GetName().Name.Length - 4);
+            string LocalSRCSystemDir = LocalDir + "/SRC-System";
+            string LocalRoutesPath = LocalSRCSystemDir + "/Routes.xml";
+            string RemoteRoutesURL = "https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml";
 
-                    catch
+            XmlDocument LocalRoutesXMLDoc = new XmlDocument();
+            XmlDocument RemoteRoutesXMLDoc = new XmlDocument();
 
-                    {
-                        try
+            WebClient RemoteRoutesClient = new WebClient();
 
-                        {
-                            // Determine whether the directory exists.
-                            if (Directory.Exists(SRCSystem))
-                            {
-                                xmlDoc.Load("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml");
-                                WebClient client = new WebClient();
-                                client.DownloadFile("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml", Routes);
-                                Routes = SRCSystem + "/Routes.xml";
-                            }
+            // check for local directory
+            if (!Directory.Exists(LocalSRCSystemDir)) {
+                // if it doesn't exist, create it
+                Directory.CreateDirectory(LocalSRCSystemDir);
+            }
 
-                            // Try to create the directory.
-                            DirectoryInfo di = Directory.CreateDirectory(SRCSystem);
-                        }
-                        catch
-                        {
+            // check for local routes file
+            if (!File.Exists(LocalSRCSystemDir)) {
+                // if it doesn't exist, download the remote routes file to the local routes file
+                RemoteRoutesClient.DownloadFile(RemoteRoutesURL, LocalRoutesPath);
+            }
 
-                        }
+            // load the localnd remote routes files for parsing
+            LocalRoutesXMLDoc.Load(LocalRoutesPath);
+            RemoteRoutesXMLDoc.Load(RemoteRoutesURL);
 
-                        break;
-                    }
+            // parse remote routes file for versions
+            if (RemoteRoutesXMLDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion") != null && LocalRoutesXMLDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion") != null) {
+                // check if remote routes version is greater than local routes version
+                if (int.Parse(RemoteRoutesXMLDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion").Value) > int.Parse(LocalRoutesXMLDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion").Value)) {
+                    // if it is, download it to the local routes file
+                    RemoteRoutesClient.DownloadFile(RemoteRoutesURL, LocalRoutesPath);
                 }
             }
 
-            // Looks at VATNZ GitHub Repo to see if a new Routes.xml file is available.
+            // load final, known good copy of local routes file for parsing
+            LocalRoutesXMLDoc.Load(LocalRoutesPath);
 
-            XmlDocument webDoc = new XmlDocument();
-            webDoc.Load("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml");
-            if (webDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion") != null && xmlDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion") != null)
-                if (int.Parse(webDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion").Value) > int.Parse(xmlDoc.ChildNodes[0].Attributes.GetNamedItem("CycleVersion").Value))
-                {
-                xmlDoc.Load("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml");
-                WebClient client = new WebClient();
-                client.DownloadFile("https://raw.githubusercontent.com/vatnz-dev/vatSys-SRC-Reader/dev/Routes/Routes.xml", Routes);
-                }
-                
-            
-            foreach (XmlNode x in xmlDoc.ChildNodes[0].ChildNodes)
-            {
-                foreach (XmlNode i in x.ChildNodes)
-                {
+            foreach (XmlNode x in LocalRoutesXMLDoc.ChildNodes[0].ChildNodes) {
+                foreach (XmlNode i in x.ChildNodes) {
+                    // add routes into application
                     routes.Add(new StandardRoute(i.Attributes.GetNamedItem("ID").Value, i.InnerText, i.Attributes.GetNamedItem("Remarks").Value));
                 }
             }
