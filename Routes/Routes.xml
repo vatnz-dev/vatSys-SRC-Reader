@@ -141,7 +141,7 @@
     <Route ID="QNWN7" Remarks="ACFT must accept a clearance and fly a published SID via ADLUP">ADLUP Y615 ELDAK Q196 CH Y393 WN</Route>
   </Airport>
   <Airport Name="NZRO">
-    <Route ID="ROAA2" Remarks="11,000ft and above">Y871 NOBAR Q132 MERAS Q119</Route>
+    <Route ID="ROAA2" Remarks="11,000ft and above">Y871 DODKU Q132 MERAS Q119</Route>
     <Route ID="ROAA6" Remarks="9,000 ft and below">Q119</Route>
     <Route ID="ROCH1" Remarks="">Y640 CHUTE Y780 ABTOL Y226 GURBO Y804 ATBUB H159</Route>
     <Route ID="ROCH4" Remarks="">H247 TM Q438 NS Q787 ALADA Y894</Route>
