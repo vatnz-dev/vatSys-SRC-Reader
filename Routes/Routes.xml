@@ -73,6 +73,7 @@
   <Airport Name="NZMS">
     <Route ID="MSCH1" Remarks="">GURBO Y804 ATBUB H159</Route>
     <Route ID="MSWN1" Remarks="">LADIT Y242</Route>
+  </Airport>
   <Airport Name="NZNV">
     <Route ID="NVAA1" Remarks="Jets Only">Q787 QN Y569 LOVTA Y655 POKOM Q277</Route>
     <Route ID="NVAA4" Remarks="Jets Only">Y615 ELDAK Q196 CH Y175 OMKUN Y655 POKOM Q277</Route>
