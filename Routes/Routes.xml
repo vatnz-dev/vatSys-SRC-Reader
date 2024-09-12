@@ -253,7 +253,7 @@
     <Route ID="CHGM1" Remarks="">AVOCA Q309 APASA PAROA</Route>
     <Route ID="CHHN3" Remarks="Jets Only">Y175 OPABI Q126</Route>
     <Route ID="CHHN5" Remarks="Non Jets">H110 PORAM Y781 RIVTA Y523 GULOV Y175 OPABI Q126</Route>
-    <Route ID="CHHK3" Remarks="">Q309</Route>
+    <Route ID="CHHK1" Remarks="">AVOCA Q309</Route>
     <Route ID="CHNV3" Remarks="">Y714 IDARA Y676</Route>
     <Route ID="CHMC1" Remarks="">Y266 SUNAR Q360 MAMUS</Route>
     <Route ID="CHNR2" Remarks="Jets Only">Y393 OMDOX Y465 KAMET H467 BINIT Y737 PM H429 SELDU H297</Route>
