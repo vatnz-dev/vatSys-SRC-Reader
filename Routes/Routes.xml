@@ -196,7 +196,7 @@
     <Route ID="WPCH1" Remarks="FL240 and above">H182 AA H384 NP H252 NS Y288</Route>
     <Route ID="WPCH6" Remarks="">H182 AA H384 NP Q137 VELGA Y894</Route>
     <Route ID="WPHN2" Remarks="AVBL RNAV and/or GNSS APV ACFT only">WP RWY 03 — Q741 MERAS Q401 | WP RWY 21 — Q718</Route>
-    <Route ID="WPOH1" Remarks="">H182 AA H211 ORISI Y666 IDLUR</Route>
+    <Route ID="WPOH1" Remarks="">H182 AA H211 ORIDI Y666 IDLUR</Route>
     <Route ID="WPWN2" Remarks="Reach cleared level by 10 NM prior to SILVO">H182 AA H384 IGBAT Y506 TPAPA Y738</Route>
   </Airport>
   <Airport Name="NZWB">
