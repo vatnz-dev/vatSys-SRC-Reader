@@ -1,4 +1,4 @@
-<StandardRoutes CycleVersion="19">
+<StandardRoutes CycleVersion="20">
   <Airport Name="NZAA">
     <Route ID="AACH1" Remarks="Jets Only; FL240 and above">H384 NP H252 NS Y288</Route>
     <Route ID="AACH6" Remarks="Props Only">H384 NP Q137 VELGA Y894</Route>
@@ -24,7 +24,7 @@
     <Route ID="AAAP1" Remarks="">H211</Route>
     <Route ID="AATG1" Remarks="">H372 TULMI H436</Route>
     <Route ID="AAWU2" Remarks="">H211 HN H325 TM H247</Route>
-    <Route ID="AAWN1" Remarks="Reach cleared level by 10NM prior to SILVO">H384 KARRL Y506 TPAPA Y738</Route>
+    <Route ID="AAWN2" Remarks="Reach cleared level by 10NM prior to SILVO">H384 IGBAT Y506 TPAPA Y738</Route>
     <Route ID="AAWK3" Remarks="">H372 TULMI H436 TG H117</Route>
     <Route ID="AAWR3" Remarks="">AA RWY 23L — H460 KOPPA H441 SF | AA RWY 05R — H379 SF</Route>
     <Route ID="AAWB3" Remarks="">H384 NP Y738 PADMU Y198 AKAVI Q566 IPMIR Q472</Route>
@@ -196,8 +196,8 @@
     <Route ID="WPCH1" Remarks="FL240 and above">H182 AA H384 NP H252 NS Y288</Route>
     <Route ID="WPCH6" Remarks="">H182 AA H384 NP Q137 VELGA Y894</Route>
     <Route ID="WPHN2" Remarks="AVBL RNAV and/or GNSS APV ACFT only">WP RWY 03 — Q741 MERAS Q401 | WP RWY 21 — Q718</Route>
-    <Route ID="WPOH3" Remarks="">H182 AA H211 LAKES Y666 IDLUR</Route>
-    <Route ID="WPWN1" Remarks="Reach cleared level by 10 NM prior to SILVO">H182 AA H384 KARRL Y506 TPAPA Y738</Route>
+    <Route ID="WPOH1" Remarks="">H182 AA H211 ORIDI Y666 IDLUR</Route>
+    <Route ID="WPWN2" Remarks="Reach cleared level by 10 NM prior to SILVO">H182 AA H384 IGBAT Y506 TPAPA Y738</Route>
   </Airport>
   <Airport Name="NZWB">
     <Route ID="WBAA1" Remarks="">Q472 IPMIR Q566 AKAVI Y175 OMKUN Y311 DADUK Y273 PEPPE H182</Route>
