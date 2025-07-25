@@ -1,4 +1,4 @@
-<StandardRoutes CycleVersion="23">
+<StandardRoutes CycleVersion="24">
   <Airport Name="NZAA">
     <Route ID="AACH1" Remarks="Jets Only; FL240 and above">H384 NP H252 NS Y288</Route>
     <Route ID="AACH6" Remarks="Props Only">H384 NP Q137 VELGA Y894</Route>
@@ -26,7 +26,7 @@
     <Route ID="AAWU2" Remarks="">H211 HN H325 TM H247</Route>
     <Route ID="AAWN2" Remarks="Reach cleared level by 10NM prior to SILVO">H384 IGBAT Y506 TPAPA Y738</Route>
     <Route ID="AAWK3" Remarks="">H372 TULMI H436 TG H117</Route>
-    <Route ID="AAWR1" Remarks="">AA RWY 23L — H470 KOPPA H441 SF | AA RWY 05R — H379 SF</Route>
+    <Route ID="AAWR1" Remarks="">AA RWY 23L — Q470 KOPPA H441 SF | AA RWY 05R — H379 SF</Route>
     <Route ID="AAWB3" Remarks="">H384 NP Y738 PADMU Y198 AKAVI Q566 IPMIR Q472</Route>
   </Airport>
   <Airport Name="NZDN">
