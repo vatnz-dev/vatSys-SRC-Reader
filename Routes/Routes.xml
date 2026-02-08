@@ -179,7 +179,6 @@
     <Route ID="OHWN5" Remarks="Available for use only when hazardous flight conditions exist north-east of Wellington">Q169 AVKEX Q235</Route>
     <Route ID="OHWP2" Remarks="Jets">W139 ENTIM Q647 DAGOM Y273 OMBUB Q102 OPABI Q277 AA H182</Route>
     <Route ID="OHWP4" Remarks="Non-Jets">W139 ENTIM Q647 DAGOM Y273 PEPPE H182</Route>
-    <Route ID="OHWP6" Remarks="Non-Jets">H352 WU Q647 DAGOM Y273 PEPPE H182</Route>
   </Airport>
   <Airport Name="NZPM">
     <Route ID="PMAA2" Remarks="">OMBUB Y273 PEPPE H182</Route>
