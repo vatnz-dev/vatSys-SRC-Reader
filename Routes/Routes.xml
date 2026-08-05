@@ -1,4 +1,4 @@
-<StandardRoutes CycleVersion="26">
+<StandardRoutes CycleVersion="27">
   <Airport Name="NZAA">
     <Route ID="AAAP1" Remarks="">H211</Route>
     <Route ID="AACH1" Remarks="Jets; FL240 and above">H384 NP H252 NS Y288</Route>
@@ -52,7 +52,7 @@
     <Route ID="CHNP1" Remarks="">H110 PORAM Y781 RIVTA Y523 GULOV Y175 OMKUN H499</Route>
     <Route ID="CHNR2" Remarks="Jets">Y393 OMDOX Y465 KAMET H467 BINIT Y737 PM H429 SELDU H297</Route>
     <Route ID="CHNR4" Remarks="Non-Jets">Y819 AGSOP Y737 PM H429 SELDU H297</Route>
-    <Route ID="CHNS2" Remarks="">NS RWY 02 — H110 PORAM Y781 BISEB | NS RWY 20 — H110 PORAM Y781 BISEB H110 GUNEL</Route>
+    <Route ID="CHNS3" Remarks="">H110 PORAM Y781 BISEB</Route>
     <Route ID="CHNV3" Remarks="">Y714 IDARA Y676</Route>
     <Route ID="CHOH3" Remarks="Jets">Y393 OMDOX Y465 KAMET H467 BINIT</Route>
     <Route ID="CHOH5" Remarks="Non-Jets">Y819 AGSOP Y737 BINIT</Route>
@@ -93,8 +93,11 @@
     <Route ID="GSWN3" Remarks="">H245 NR H103 RIDLA H201 PM V242 DOGAD V112</Route>
     <Route ID="GSWO3" Remarks="">H245</Route>
   </Airport>
+  <Airport Name="NZHK">
+    <Route ID="HKCH1" Remarks="">Q309</Route>
+  </Airport>
   <Airport Name="NZHN">
-    <Route ID="HNAA3" Remarks="">AA RWY 23L — SKEPY 2A STAR | AA RWY 05R — SCARY 3B STAR</Route>
+    <Route ID="HNAA1" Remarks="">AA RWY 23L — SKEPY 2A STAR | AA RWY 05R — LEBIP 1B STAR</Route>
     <Route ID="HNCH3" Remarks="Jets; FL240 and above">H479 NP H252 NS Y288</Route>
     <Route ID="HNCH5" Remarks="Non-Jets">Q126 LIKTU Y526 ALADA Y894</Route>
     <Route ID="HNGS1" Remarks="">H328</Route>
